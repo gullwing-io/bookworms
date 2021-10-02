@@ -58,7 +58,7 @@ Object {
         "label": "folder 2",
       },
     ],
-    "label": "Bookworm",
+    "label": "Bookworms",
   },
   "type": "local",
 }
@@ -122,7 +122,7 @@ Object {
         "label": "folder 2",
       },
     ],
-    "label": "Bookworm",
+    "label": "Bookworms",
   },
   "type": "remote",
 }
@@ -185,7 +185,7 @@ Object {
       "label": "folder 2",
     },
   ],
-  "label": "Bookworm",
+  "label": "Bookworms",
 }
 `;
 
@@ -246,6 +246,6 @@ Object {
       "label": "folder 2",
     },
   ],
-  "label": "Bookworm",
+  "label": "Bookworms",
 }
 `;

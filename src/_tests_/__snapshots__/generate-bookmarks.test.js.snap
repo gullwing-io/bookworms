@@ -35,7 +35,7 @@ exports[`generating bookmarks structure generateImportBookmarkMarkup should retu
 Array [
   Object {
     "body": "
-    <!-- These bookmarks were last updated on Invalid Date using bookworms(https://github.com/thearegee/bookworm) -->
+    <!-- These bookmarks were last updated on Invalid Date using bookworms (https://github.com/thearegee/bookworms) -->
     <!DOCTYPE NETSCAPE-Bookmark-file-1>
 <!-- This is an automatically generated file.
         It will be read and overwritten.
@@ -103,7 +103,7 @@ Folder description 2.1
     
 * [Link 3](https://www.testlink3.com) - Bookmark 3
 
-_These bookmarks were last updated on 14/02/2017, 12:51:48 using [Bookworm](https://github.com/thearegee/bookworm)_
+_These bookmarks were last updated on 14/02/2017, 12:51:48 using [Bookworms](https://github.com/thearegee/bookworms)_
 ",
     "filename": "readme.md",
   },

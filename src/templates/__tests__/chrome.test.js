@@ -32,7 +32,7 @@ describe('Templates - Chrome', () => {
     })
     describe('addBookwormsDescription', () => {
         test('should return description for file comment', () => {
-            expect(addBookwormsDescription(1633027394454)).toEqual('<!-- These bookmarks were last updated on 30/09/2021, 19:43:14 using bookworms(https://github.com/thearegee/bookworms) -->')
+            expect(addBookwormsDescription(1633027394454)).toEqual('<!-- These bookmarks were last updated on 30/09/2021, 19:43:14 using bookworms (https://github.com/thearegee/bookworms) -->')
         });
     })
 

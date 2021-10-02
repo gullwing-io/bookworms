@@ -59,7 +59,7 @@ describe('loading bookmark config', () => {
                 returnResponseAsObject(undefined, 'https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml');
                 expect(true).toBe(false);
             } catch (error) {
-                expect(error.message).toEqual('https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml returned invalid bookwormsbookmarks structure')
+                expect(error.message).toEqual('https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml returned invalid bookworms bookmarks structure')
             }
         })
         test('should return object with string of JSON', () => {
