@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Templates - Chrome bookmark should return structure for Chrome bookmarks 1`] = `
+"
+    <!-- These bookmarks were last updated on Invalid Date using bookworms(https://github.com/thearegee/bookworm) -->
+    <!DOCTYPE NETSCAPE-Bookmark-file-1>
+<!-- This is an automatically generated file.
+        It will be read and overwritten.
+        DO NOT EDIT! -->
+<META HTTP-EQUIV=\\"Content-Type\\" CONTENT=\\"text/html; charset=UTF-8\\">
+<TITLE>Bookmarks</TITLE>
+<H1>Bookmarks</H1>
+<!-- Bookmarks description -->
+<DL><p>
+<DT><H3 ADD_DATE=\\"26/09/2021 - 6pm\\" LAST_MODIFIED=\\"26/09/2021 - 6pm\\">Bookmarks label</H3>
+<DL><p>
+    <div>Children HTML</div>
+</DL><p>
+</DL><p>
+    "
+`;
+
+exports[`Templates - Chrome bookmarkFolder should return description, header and children 1`] = `
+"
+            <!-- Section description -->
+            <DT><H3 ADD_DATE=\\"26/09/2021 - 6pm\\" LAST_MODIFIED=\\"26/09/2021 - 6pm\\">Section label</H3>
+<DL><p>
+<div>Children HTML</div>
+</DL><p>
+    "
+`;
+
+exports[`Templates - Chrome bookmarkFolder should return description, header and children 2`] = `
+"
+            <!-- Link description -->
+            <DT><H3 ADD_DATE=\\"26/09/2021 - 6pm\\" LAST_MODIFIED=\\"26/09/2021 - 6pm\\">Link label</H3>
+<DL><p>
+<div>Children HTML</div>
+</DL><p>
+    "
+`;
+
+exports[`Templates - Chrome bookmarkLink should return description and link 1`] = `
+"
+    <!-- Link description -->
+    <DT><A HREF=\\"https://www.testlink.com\\" ADD_DATE=\\"26/09/2021 - 6pm\\">Link label</A>
+    "
+`;

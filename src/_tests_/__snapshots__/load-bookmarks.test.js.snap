@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loading bookmark config fetchBookmarkConfig should return locale bookmarks 1`] = `
+Object {
+  "body": Object {
+    "description": "These are sample bookmarks to teach you how bookmark works",
+    "folders": Array [
+      Object {
+        "description": "This is to describe the folder structure",
+        "folders": Array [
+          Object {
+            "bookmarks": Array [
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mywebsite.com",
+                "label": "sample url 1",
+              },
+            ],
+            "description": "This is to describe the sub folder structure",
+            "label": "sub folder 1",
+          },
+        ],
+        "label": "folder 1",
+      },
+      Object {
+        "folders": Array [
+          Object {
+            "bookmarks": Array [
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mysecondwebsite.com",
+                "label": "sample url 2",
+              },
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mythirdwebsite.com",
+                "label": "sample url 3",
+              },
+            ],
+            "label": "sub folder 2",
+          },
+          Object {
+            "bookmarks": Array [
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mysecondwebsite.com",
+                "label": "sample url 4",
+              },
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mythirdwebsite.com",
+                "label": "sample url 5",
+              },
+            ],
+            "label": "sub folder 3",
+          },
+        ],
+        "label": "folder 2",
+      },
+    ],
+    "label": "Bookworm",
+  },
+  "type": "local",
+}
+`;
+
+exports[`loading bookmark config fetchBookmarkConfig should return remote bookmarks 1`] = `
+Object {
+  "body": Object {
+    "description": "These are sample bookmarks to teach you how bookmark works",
+    "folders": Array [
+      Object {
+        "description": "This is to describe the folder structure",
+        "folders": Array [
+          Object {
+            "bookmarks": Array [
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mywebsite.com",
+                "label": "sample url 1",
+              },
+            ],
+            "description": "This is to describe the sub folder structure",
+            "label": "sub folder 1",
+          },
+        ],
+        "label": "folder 1",
+      },
+      Object {
+        "folders": Array [
+          Object {
+            "bookmarks": Array [
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mysecondwebsite.com",
+                "label": "sample url 2",
+              },
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mythirdwebsite.com",
+                "label": "sample url 3",
+              },
+            ],
+            "label": "sub folder 2",
+          },
+          Object {
+            "bookmarks": Array [
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mysecondwebsite.com",
+                "label": "sample url 4",
+              },
+              Object {
+                "description": "this is used to describe the bookmark",
+                "href": "https://www.mythirdwebsite.com",
+                "label": "sample url 5",
+              },
+            ],
+            "label": "sub folder 3",
+          },
+        ],
+        "label": "folder 2",
+      },
+    ],
+    "label": "Bookworm",
+  },
+  "type": "remote",
+}
+`;
+
+exports[`loading bookmark config fetchLocaleBookmarkConfig should return JSON from local YMAL 1`] = `
+Object {
+  "description": "These are sample bookmarks to teach you how bookmark works",
+  "folders": Array [
+    Object {
+      "description": "This is to describe the folder structure",
+      "folders": Array [
+        Object {
+          "bookmarks": Array [
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mywebsite.com",
+              "label": "sample url 1",
+            },
+          ],
+          "description": "This is to describe the sub folder structure",
+          "label": "sub folder 1",
+        },
+      ],
+      "label": "folder 1",
+    },
+    Object {
+      "folders": Array [
+        Object {
+          "bookmarks": Array [
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mysecondwebsite.com",
+              "label": "sample url 2",
+            },
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mythirdwebsite.com",
+              "label": "sample url 3",
+            },
+          ],
+          "label": "sub folder 2",
+        },
+        Object {
+          "bookmarks": Array [
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mysecondwebsite.com",
+              "label": "sample url 4",
+            },
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mythirdwebsite.com",
+              "label": "sample url 5",
+            },
+          ],
+          "label": "sub folder 3",
+        },
+      ],
+      "label": "folder 2",
+    },
+  ],
+  "label": "Bookworm",
+}
+`;
+
+exports[`loading bookmark config fetchRemoteBoomarkConfig should return JSON from http request 1`] = `
+Object {
+  "description": "These are sample bookmarks to teach you how bookmark works",
+  "folders": Array [
+    Object {
+      "description": "This is to describe the folder structure",
+      "folders": Array [
+        Object {
+          "bookmarks": Array [
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mywebsite.com",
+              "label": "sample url 1",
+            },
+          ],
+          "description": "This is to describe the sub folder structure",
+          "label": "sub folder 1",
+        },
+      ],
+      "label": "folder 1",
+    },
+    Object {
+      "folders": Array [
+        Object {
+          "bookmarks": Array [
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mysecondwebsite.com",
+              "label": "sample url 2",
+            },
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mythirdwebsite.com",
+              "label": "sample url 3",
+            },
+          ],
+          "label": "sub folder 2",
+        },
+        Object {
+          "bookmarks": Array [
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mysecondwebsite.com",
+              "label": "sample url 4",
+            },
+            Object {
+              "description": "this is used to describe the bookmark",
+              "href": "https://www.mythirdwebsite.com",
+              "label": "sample url 5",
+            },
+          ],
+          "label": "sub folder 3",
+        },
+      ],
+      "label": "folder 2",
+    },
+  ],
+  "label": "Bookworm",
+}
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Templates - Readme bookmark should return structure for Chrome bookmarks 1`] = `
+"
+# Bookmarks label
+Bookmarks description
+_Children markdown_
+_These bookmarks were last updated on Invalid Date using [Bookworm](https://github.com/thearegee/bookworm)_
+"
+`;
+
+exports[`Templates - Readme bookmarkFolder should return description, header and children 1`] = `
+"
+# Section label
+Section description
+_Children markdown_
+    "
+`;
+
+exports[`Templates - Readme bookmarkLink should return description and link 1`] = `
+"
+* [26/09/2021 - 6pm](Link description) - Link label
+"
+`;

@@ -1,0 +1,30 @@
+label: Bookworms
+description: These are sample bookmarks to teach you how bookmark works
+folders:
+  - label: folder 1
+    description: This is to describe the folder structure
+    folders:
+      - label: sub folder 1
+        description: This is to describe the sub folder structure
+        bookmarks:
+          - label: sample url 1
+            description: this is used to describe the bookmark
+            href: https://www.mywebsite.com
+  - label: folder 2
+    folders:
+      - label: sub folder 2
+        bookmarks:
+          - label: sample url 2
+            description: this is used to describe the bookmark
+            href: https://www.mysecondwebsite.com
+          - label: sample url 3
+            description: this is used to describe the bookmark
+            href: https://www.mythirdwebsite.com
+      - label: sub folder 3
+        bookmarks:
+          - label: sample url 4
+            description: this is used to describe the bookmark
+            href: https://www.mysecondwebsite.com
+          - label: sample url 5
+            description: this is used to describe the bookmark
+            href: https://www.mythirdwebsite.com
