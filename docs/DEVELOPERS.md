@@ -57,7 +57,22 @@ $ npm start -- get ./demo/config/boomarks.yaml -d="./tmp"
 
 ### Bookworms modules
 
-Bookworms has all of its modules available to be imported into another project if you are interested in building on top of it.
+Bookworms has all of its modules available to be imported into another project if you are interested in building on top of it. You should note that it uses [ECMAScript modules](https://nodejs.org/api/vm.html#vm_class_vm_module) which were introduced in Node 14, to take advantage of these you might want to consider the following.
+
+Include a `.nvmrc` to use a version of node that supports ECMAScript modules](https://nodejs.org/api/vm.html#vm_class_vm_module).
+```BASH
+# .nvmrc
+# Used to run the correct node version
+14
+```
+
+Add into your `.package.json`:
+
+```JSON
+"type": "module"
+```
+
+You can now import Bookworms into your project.
 
 ```JS
 import {loadBookmarks, generateBookmarks, saveBookmarks} from 'bookworms';
