@@ -1,7 +1,5 @@
 # Bookworms
 
-**NPX Not yet available, working on it now.**
-
 > Centralise your bookmarks as `YAML` configuration and export them into different formats that can be used with your existing tools.
 
 In a large company there are literally thousands of tools, development environments and HR system URLs to remember. In a start up there maybe many less but in both scenarios there is probably no authority of truth and if there is, it is often out of date. It is also a common on GitHub to see people create `readme` documents listing useful URLs on certain topic.
