@@ -66,7 +66,7 @@ browsers.html readme.md
 You can also fetch bookmarks from a remote location and output the exports into a directory:
 
 ```BASH
-npx bookworms get ./https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml -d="./output"
+npx bookworms get https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml -d="./output"
 ```
 
 For more information about how to use these files see: [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md)
