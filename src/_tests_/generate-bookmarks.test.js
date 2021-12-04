@@ -40,38 +40,38 @@ describe('generating bookmarks structure', () => {
         });
     });
     describe('traverseStructure', () => {
-        test('should return structure for Chrome bookmarks', () => {
+        test('should return structure for browsers bookmarks', () => {
             Date.now = jest.fn(() => 1487076708000)
             const structure = {
                 folders: [{
-                    label: 'Chrome folder 1',
-                    description: 'Chrome folder description 1',
+                    label: 'browsers folder 1',
+                    description: 'browsers folder description 1',
                     bookmarks: [{
-                        label: 'Chrome link 1',
-                        description: 'Chrome bookmark 1',
+                        label: 'browsers link 1',
+                        description: 'browsers bookmark 1',
                         href: 'https://www.testlink1.com'
                     }]
                 },
                 {
-                    label: 'Chrome folder 2',
-                    description: 'Chrome folder description 2',
+                    label: 'browsers folder 2',
+                    description: 'browsers folder description 2',
                     folders: [{
-                            label: 'Chrome folder 2.1',
-                            description: 'Chrome folder description 2.1',
+                            label: 'browsers folder 2.1',
+                            description: 'browsers folder description 2.1',
                             bookmarks: [{
-                                label: 'Chrome link 2',
-                                description: 'Chrome bookmark 2',
+                                label: 'browsers link 2',
+                                description: 'browsers bookmark 2',
                                 href: 'https://www.testlink2.com'
                             }]
                         }]
                 }],
                 bookmarks: [{
-                    label: 'Chrome link 3',
-                    description: 'Chrome bookmark 3',
+                    label: 'browsers link 3',
+                    description: 'browsers bookmark 3',
                     href: 'https://www.testlink3.com'
                 }]
             }
-            expect(traverseStructure(structure, 'chrome')).toMatchSnapshot()
+            expect(traverseStructure(structure, 'browsers')).toMatchSnapshot()
         });
         test('should return structure for Readme bookmarks', () => {
             Date.now = jest.fn(() => 1487076708000)
@@ -108,39 +108,39 @@ describe('generating bookmarks structure', () => {
         });
     })
     describe('traverseFolders', () => {
-        test('should return simple structure for Chrome folders', () => {
+        test('should return simple structure for browsers folders', () => {
             Date.now = jest.fn(() => 1487076708000)
             const folders = [
                 {
-                    label: 'Chrome folder 1',
-                    description: 'Chrome folder description 1'
+                    label: 'browsers folder 1',
+                    description: 'browsers folder description 1'
                 },
                 {
-                    label: 'Chrome folder 2',
-                    description: 'Chrome folder description 2'
+                    label: 'browsers folder 2',
+                    description: 'browsers folder description 2'
                 }
             ]
-            expect(traverseFolders(folders, 'chrome')).toMatchSnapshot()
+            expect(traverseFolders(folders, 'browsers')).toMatchSnapshot()
         });
-        test('should return structure for nested Chrome folders', () => {
+        test('should return structure for nested browsers folders', () => {
             Date.now = jest.fn(() => 1487076708000)
             const folders = [
                 {
-                    label: 'Chrome folder 1',
-                    description: 'Chrome folder description 1',
+                    label: 'browsers folder 1',
+                    description: 'browsers folder description 1',
                     folders: [
                         {
-                            label: 'Chrome folder 1.1',
-                            description: 'Chrome folder description 1.1'
+                            label: 'browsers folder 1.1',
+                            description: 'browsers folder description 1.1'
                         }
                     ]
                 },
                 {
-                    label: 'Chrome folder 2',
-                    description: 'Chrome folder description 2'
+                    label: 'browsers folder 2',
+                    description: 'browsers folder description 2'
                 }
             ]
-            expect(traverseFolders(folders, 'chrome')).toMatchSnapshot()
+            expect(traverseFolders(folders, 'browsers')).toMatchSnapshot()
         });
         test('should return simple structure for Readme folders', () => {
             Date.now = jest.fn(() => 1487076708000)
@@ -178,19 +178,19 @@ describe('generating bookmarks structure', () => {
         });
     })
     describe('traverseBookmarks', () => {
-        test('should return structure for Chrome links', () => {
+        test('should return structure for browsers links', () => {
             Date.now = jest.fn(() => 1487076708000)
             const bookmarks = [{
-                label: 'Chrome link 1',
-                description: 'Chrome bookmark 1',
+                label: 'browsers link 1',
+                description: 'browsers bookmark 1',
                 href: 'https://www.testlink1.com'
             },
             {
-                label: 'Chrome link 2',
-                description: 'Chrome bookmark 2',
+                label: 'browsers link 2',
+                description: 'browsers bookmark 2',
                 href: 'https://www.testlink2.com'
             }]
-            expect(traverseBookmarks(bookmarks, 'chrome')).toMatchSnapshot()
+            expect(traverseBookmarks(bookmarks, 'browsers')).toMatchSnapshot()
         });
         test('should return structure for Readme links', () => {
             Date.now = jest.fn(() => 1487076708000)
@@ -210,9 +210,9 @@ describe('generating bookmarks structure', () => {
     })
 
     describe('generateBookmarkFolderMarkup', () => {
-        test('should return structure for Chrome folder', () => {
+        test('should return structure for browsers folder', () => {
             Date.now = jest.fn(() => 1487076708000)
-            expect(generateBookmarkFolderMarkup(null, 'Chrome folder', 'Chrome folder description', '<div>Children HTML</div>', 'chrome')).toMatchSnapshot()
+            expect(generateBookmarkFolderMarkup(null, 'browsers folder', 'browsers folder description', '<div>Children HTML</div>', 'browsers')).toMatchSnapshot()
         });
         test('should return structure for Readme folder', () => {
             Date.now = jest.fn(() => 1487076708000)
@@ -220,14 +220,14 @@ describe('generating bookmarks structure', () => {
         });
     })
     describe('generateBookmarkLinkMarkup', () => {
-        test('should return structure for Chrome link', () => {
+        test('should return structure for browsers link', () => {
             Date.now = jest.fn(() => 1487076708000)
             const bookmark = {
-                label: 'Chrome link',
-                description: 'Chrome bookmark',
+                label: 'browsers link',
+                description: 'browsers bookmark',
                 href: 'https://www.testlink.com'
             }
-            expect(generateBookmarkLinkMarkup(bookmark, 'chrome')).toMatchSnapshot()
+            expect(generateBookmarkLinkMarkup(bookmark, 'browsers')).toMatchSnapshot()
         });
         test('should return structure for Readme link', () => {
             Date.now = jest.fn(() => 1487076708000)

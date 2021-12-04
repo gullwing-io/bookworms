@@ -6,7 +6,7 @@ describe('saving bookmarks', () => {
         test('should write bookmark files', () => {
             const path = './tmp'
             const bookmarks = [{
-                filename: 'chrome.html',
+                filename: 'browser.html',
                 body: '<div>hello world</div>'
             },
             {

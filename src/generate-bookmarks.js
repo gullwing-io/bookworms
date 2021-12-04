@@ -1,6 +1,6 @@
 import { fetchBookmarkConfig } from './load-bookmarks.js'
 import { writeBookmarks } from './save-bookmarks.js'
-import * as chrome from './templates/chrome.js';
+import * as browsers from './templates/browsers.js';
 import * as readme from './templates/readme.js';
 
 const createBookmarks = async (bookmarks, directory) => {
@@ -16,8 +16,8 @@ const createBookmarks = async (bookmarks, directory) => {
 const generateImportBookmarkMarkup = (config) => {
     return [
         {
-            filename: 'chrome.html',
-            body:chrome.bookmark(generateTimeStamp(), config.label, config.description, traverseStructure(config, 'chrome')) 
+            filename: 'browsers.html',
+            body:browsers.bookmark(generateTimeStamp(), config.label, config.description, traverseStructure(config, 'browsers')) 
         },
         {
             filename: 'readme.md',
@@ -57,8 +57,8 @@ const traverseBookmarks = (bookmarks, type) => {
 
 const generateBookmarkFolderMarkup = (index, label, description, children, type) => {
     switch (type) {
-        case 'chrome':
-            return chrome.bookmarkFolder(generateTimeStamp(), label, description, children)
+        case 'browsers':
+            return browsers.bookmarkFolder(generateTimeStamp(), label, description, children)
         case 'readme':
             return readme.bookmarkFolder(index, label, description, children)
     }
@@ -66,8 +66,8 @@ const generateBookmarkFolderMarkup = (index, label, description, children, type)
 
 const generateBookmarkLinkMarkup = (bookmark, type) => {
     switch (type) {
-        case 'chrome':
-            return chrome.bookmarkLink(generateTimeStamp(), bookmark.label, bookmark.description, bookmark.href)
+        case 'browsers':
+            return browsers.bookmarkLink(generateTimeStamp(), bookmark.label, bookmark.description, bookmark.href)
         case 'readme':
             return readme.bookmarkLink(bookmark.label, bookmark.description, bookmark.href)
     }

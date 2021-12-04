@@ -3,7 +3,7 @@
 exports[`loading bookmark config fetchBookmarkConfig should return locale bookmarks 1`] = `
 Object {
   "body": Object {
-    "description": "These are sample bookmarks to teach you how bookmark works",
+    "description": "These are sample bookmarks to teach you how Bookworms works",
     "folders": Array [
       Object {
         "description": "This is to describe the folder structure",
@@ -28,12 +28,12 @@ Object {
             "bookmarks": Array [
               Object {
                 "description": "this is used to describe the bookmark",
-                "href": "https://www.mysecondwebsite.com",
+                "href": "https://www.mywebsite.com",
                 "label": "sample url 2",
               },
               Object {
                 "description": "this is used to describe the bookmark",
-                "href": "https://www.mythirdwebsite.com",
+                "href": "https://www.mywebsite.com",
                 "label": "sample url 3",
               },
             ],
@@ -43,12 +43,12 @@ Object {
             "bookmarks": Array [
               Object {
                 "description": "this is used to describe the bookmark",
-                "href": "https://www.mysecondwebsite.com",
+                "href": "https://www.mywebsite.com",
                 "label": "sample url 4",
               },
               Object {
                 "description": "this is used to describe the bookmark",
-                "href": "https://www.mythirdwebsite.com",
+                "href": "https://www.mywebsite.com",
                 "label": "sample url 5",
               },
             ],
@@ -67,7 +67,7 @@ Object {
 exports[`loading bookmark config fetchBookmarkConfig should return remote bookmarks 1`] = `
 Object {
   "body": Object {
-    "description": "These are sample bookmarks to teach you how bookmark works",
+    "description": "These are sample bookmarks to teach you how Bookworms works",
     "folders": Array [
       Object {
         "description": "This is to describe the folder structure",
@@ -92,12 +92,12 @@ Object {
             "bookmarks": Array [
               Object {
                 "description": "this is used to describe the bookmark",
-                "href": "https://www.mysecondwebsite.com",
+                "href": "https://www.mywebsite.com",
                 "label": "sample url 2",
               },
               Object {
                 "description": "this is used to describe the bookmark",
-                "href": "https://www.mythirdwebsite.com",
+                "href": "https://www.mywebsite.com",
                 "label": "sample url 3",
               },
             ],
@@ -107,12 +107,12 @@ Object {
             "bookmarks": Array [
               Object {
                 "description": "this is used to describe the bookmark",
-                "href": "https://www.mysecondwebsite.com",
+                "href": "https://www.mywebsite.com",
                 "label": "sample url 4",
               },
               Object {
                 "description": "this is used to describe the bookmark",
-                "href": "https://www.mythirdwebsite.com",
+                "href": "https://www.mywebsite.com",
                 "label": "sample url 5",
               },
             ],
@@ -130,7 +130,7 @@ Object {
 
 exports[`loading bookmark config fetchLocaleBookmarkConfig should return JSON from local YMAL 1`] = `
 Object {
-  "description": "These are sample bookmarks to teach you how bookmark works",
+  "description": "These are sample bookmarks to teach you how Bookworms works",
   "folders": Array [
     Object {
       "description": "This is to describe the folder structure",
@@ -155,12 +155,12 @@ Object {
           "bookmarks": Array [
             Object {
               "description": "this is used to describe the bookmark",
-              "href": "https://www.mysecondwebsite.com",
+              "href": "https://www.mywebsite.com",
               "label": "sample url 2",
             },
             Object {
               "description": "this is used to describe the bookmark",
-              "href": "https://www.mythirdwebsite.com",
+              "href": "https://www.mywebsite.com",
               "label": "sample url 3",
             },
           ],
@@ -170,12 +170,12 @@ Object {
           "bookmarks": Array [
             Object {
               "description": "this is used to describe the bookmark",
-              "href": "https://www.mysecondwebsite.com",
+              "href": "https://www.mywebsite.com",
               "label": "sample url 4",
             },
             Object {
               "description": "this is used to describe the bookmark",
-              "href": "https://www.mythirdwebsite.com",
+              "href": "https://www.mywebsite.com",
               "label": "sample url 5",
             },
           ],
@@ -191,7 +191,7 @@ Object {
 
 exports[`loading bookmark config fetchRemoteBoomarkConfig should return JSON from http request 1`] = `
 Object {
-  "description": "These are sample bookmarks to teach you how bookmark works",
+  "description": "These are sample bookmarks to teach you how Bookworms works",
   "folders": Array [
     Object {
       "description": "This is to describe the folder structure",
@@ -216,12 +216,12 @@ Object {
           "bookmarks": Array [
             Object {
               "description": "this is used to describe the bookmark",
-              "href": "https://www.mysecondwebsite.com",
+              "href": "https://www.mywebsite.com",
               "label": "sample url 2",
             },
             Object {
               "description": "this is used to describe the bookmark",
-              "href": "https://www.mythirdwebsite.com",
+              "href": "https://www.mywebsite.com",
               "label": "sample url 3",
             },
           ],
@@ -231,12 +231,12 @@ Object {
           "bookmarks": Array [
             Object {
               "description": "this is used to describe the bookmark",
-              "href": "https://www.mysecondwebsite.com",
+              "href": "https://www.mywebsite.com",
               "label": "sample url 4",
             },
             Object {
               "description": "this is used to describe the bookmark",
-              "href": "https://www.mythirdwebsite.com",
+              "href": "https://www.mywebsite.com",
               "label": "sample url 5",
             },
           ],

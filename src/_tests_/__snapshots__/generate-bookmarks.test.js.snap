@@ -1,15 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`generating bookmarks structure generateBookmarkFolderMarkup should return structure for Chrome folder 1`] = `
-"
-            <!-- Chrome folder description -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Chrome folder</H3>
-<DL><p>
-<div>Children HTML</div>
-</DL><p>
-    "
-`;
-
 exports[`generating bookmarks structure generateBookmarkFolderMarkup should return structure for Readme folder 1`] = `
 "
 # Readme folder
@@ -18,10 +8,13 @@ _Children markdown_
     "
 `;
 
-exports[`generating bookmarks structure generateBookmarkLinkMarkup should return structure for Chrome link 1`] = `
+exports[`generating bookmarks structure generateBookmarkFolderMarkup should return structure for browsers folder 1`] = `
 "
-    <!-- Chrome bookmark -->
-    <DT><A HREF=\\"https://www.testlink.com\\" ADD_DATE=\\"1487076708000\\">Chrome link</A>
+            <!-- browsers folder description -->
+            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">browsers folder</H3>
+<DL><p>
+<div>Children HTML</div>
+</DL><p>
     "
 `;
 
@@ -29,6 +22,13 @@ exports[`generating bookmarks structure generateBookmarkLinkMarkup should return
 "
 * [Readme link](https://www.testlink.com) - Readme bookmark
 "
+`;
+
+exports[`generating bookmarks structure generateBookmarkLinkMarkup should return structure for browsers link 1`] = `
+"
+    <!-- browsers bookmark -->
+    <DT><A HREF=\\"https://www.testlink.com\\" ADD_DATE=\\"1487076708000\\">browsers link</A>
+    "
 `;
 
 exports[`generating bookmarks structure generateImportBookmarkMarkup should return full structure for bookmarks 1`] = `
@@ -78,7 +78,7 @@ Array [
 </DL><p>
 </DL><p>
     ",
-    "filename": "chrome.html",
+    "filename": "browsers.html",
   },
   Object {
     "body": "
@@ -110,16 +110,6 @@ _These bookmarks were last updated on 14/02/2017, 12:51:48 using [Bookworms](htt
 ]
 `;
 
-exports[`generating bookmarks structure traverseBookmarks should return structure for Chrome links 1`] = `
-"
-    <!-- Chrome bookmark 1 -->
-    <DT><A HREF=\\"https://www.testlink1.com\\" ADD_DATE=\\"1487076708000\\">Chrome link 1</A>
-    
-    <!-- Chrome bookmark 2 -->
-    <DT><A HREF=\\"https://www.testlink2.com\\" ADD_DATE=\\"1487076708000\\">Chrome link 2</A>
-    "
-`;
-
 exports[`generating bookmarks structure traverseBookmarks should return structure for Readme links 1`] = `
 "
 * [Readme link 1](https://www.testlink1.com) - Readme bookmark 1
@@ -128,19 +118,13 @@ exports[`generating bookmarks structure traverseBookmarks should return structur
 "
 `;
 
-exports[`generating bookmarks structure traverseFolders should return simple structure for Chrome folders 1`] = `
+exports[`generating bookmarks structure traverseBookmarks should return structure for browsers links 1`] = `
 "
-            <!-- Chrome folder description 1 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Chrome folder 1</H3>
-<DL><p>
-
-</DL><p>
+    <!-- browsers bookmark 1 -->
+    <DT><A HREF=\\"https://www.testlink1.com\\" ADD_DATE=\\"1487076708000\\">browsers link 1</A>
     
-            <!-- Chrome folder description 2 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Chrome folder 2</H3>
-<DL><p>
-
-</DL><p>
+    <!-- browsers bookmark 2 -->
+    <DT><A HREF=\\"https://www.testlink2.com\\" ADD_DATE=\\"1487076708000\\">browsers link 2</A>
     "
 `;
 
@@ -156,22 +140,16 @@ Readme folder description 2
     "
 `;
 
-exports[`generating bookmarks structure traverseFolders should return structure for nested Chrome folders 1`] = `
+exports[`generating bookmarks structure traverseFolders should return simple structure for browsers folders 1`] = `
 "
-            <!-- Chrome folder description 1 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Chrome folder 1</H3>
-<DL><p>
-
-            <!-- Chrome folder description 1.1 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Chrome folder 1.1</H3>
+            <!-- browsers folder description 1 -->
+            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">browsers folder 1</H3>
 <DL><p>
 
 </DL><p>
     
-</DL><p>
-    
-            <!-- Chrome folder description 2 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Chrome folder 2</H3>
+            <!-- browsers folder description 2 -->
+            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">browsers folder 2</H3>
 <DL><p>
 
 </DL><p>
@@ -194,34 +172,25 @@ Readme folder description 2
     "
 `;
 
-exports[`generating bookmarks structure traverseStructure should return structure for Chrome bookmarks 1`] = `
+exports[`generating bookmarks structure traverseFolders should return structure for nested browsers folders 1`] = `
 "
-            <!-- Chrome folder description 1 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Chrome folder 1</H3>
+            <!-- browsers folder description 1 -->
+            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">browsers folder 1</H3>
 <DL><p>
 
-    <!-- Chrome bookmark 1 -->
-    <DT><A HREF=\\"https://www.testlink1.com\\" ADD_DATE=\\"1487076708000\\">Chrome link 1</A>
-    
-</DL><p>
-    
-            <!-- Chrome folder description 2 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Chrome folder 2</H3>
+            <!-- browsers folder description 1.1 -->
+            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">browsers folder 1.1</H3>
 <DL><p>
 
-            <!-- Chrome folder description 2.1 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Chrome folder 2.1</H3>
-<DL><p>
-
-    <!-- Chrome bookmark 2 -->
-    <DT><A HREF=\\"https://www.testlink2.com\\" ADD_DATE=\\"1487076708000\\">Chrome link 2</A>
-    
 </DL><p>
     
 </DL><p>
     
-    <!-- Chrome bookmark 3 -->
-    <DT><A HREF=\\"https://www.testlink3.com\\" ADD_DATE=\\"1487076708000\\">Chrome link 3</A>
+            <!-- browsers folder description 2 -->
+            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">browsers folder 2</H3>
+<DL><p>
+
+</DL><p>
     "
 `;
 
@@ -245,4 +214,35 @@ Readme folder description 2.1
     
 * [Readme link 3](https://www.testlink3.com) - Readme bookmark 3
 "
+`;
+
+exports[`generating bookmarks structure traverseStructure should return structure for browsers bookmarks 1`] = `
+"
+            <!-- browsers folder description 1 -->
+            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">browsers folder 1</H3>
+<DL><p>
+
+    <!-- browsers bookmark 1 -->
+    <DT><A HREF=\\"https://www.testlink1.com\\" ADD_DATE=\\"1487076708000\\">browsers link 1</A>
+    
+</DL><p>
+    
+            <!-- browsers folder description 2 -->
+            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">browsers folder 2</H3>
+<DL><p>
+
+            <!-- browsers folder description 2.1 -->
+            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">browsers folder 2.1</H3>
+<DL><p>
+
+    <!-- browsers bookmark 2 -->
+    <DT><A HREF=\\"https://www.testlink2.com\\" ADD_DATE=\\"1487076708000\\">browsers link 2</A>
+    
+</DL><p>
+    
+</DL><p>
+    
+    <!-- browsers bookmark 3 -->
+    <DT><A HREF=\\"https://www.testlink3.com\\" ADD_DATE=\\"1487076708000\\">browsers link 3</A>
+    "
 `;

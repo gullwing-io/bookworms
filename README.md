@@ -60,7 +60,7 @@ This will then generate in the `./` folder the different exports you can then us
 ```BASH
 $ cd output
 $ ls
-chrome.html readme.md
+browsers.html readme.md
 ```
 
 You can also fetch bookmarks from a remote location and output the exports into a directory:
@@ -86,11 +86,7 @@ If you want to understand more about Bookworms you can read the following:
 
 ## Todo
 
-* Support for other browsers and tools for bookmarks
-  * Safari
-  * Edge
-  * Firefox
-  * Brave
+* Support for other tools for bookmarks
   * Notion
   * Google docs
 * Support multiple YMAL files and merging together

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Templates - Readme bookmark should return structure for Chrome bookmarks 1`] = `
+exports[`Templates - Readme bookmark should return structure for Readme bookmarks 1`] = `
 "
 # Bookmarks label
 Bookmarks description

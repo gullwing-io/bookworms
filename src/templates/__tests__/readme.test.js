@@ -3,7 +3,7 @@ import {bookmark, bookmarkFolder, convertNumberIntoHeader, bookmarkLink, addDesc
 // I don't like using snapshots for these tests but because of the HTML formatting its easier
 describe('Templates - Readme', () => {
     describe('bookmark', () => {
-        test('should return structure for Chrome bookmarks', () => {
+        test('should return structure for Readme bookmarks', () => {
             expect(bookmark('26/09/2021 - 6pm', 'Bookmarks label', 'Bookmarks description', '_Children markdown_')).toMatchSnapshot()
         });
     })

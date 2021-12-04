@@ -111,14 +111,14 @@ You can see that there was no bookmarks passed, these are two examples you could
 # Remote config
 $ npm start -- get https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml
 # Locale config
-$ npm start -- get ./demo/config/boomarks.yaml
+$ npm start -- get ./demo/config/bookmarks.yaml
 ```
 
 by default this will export the files into `./` but if you want to change this you can with the flag `-d` or `--directory`.
 
 ```BASH
 # Locale config
-$ npm start -- get ./demo/config/boomarks.yaml -d="./tmp"
+$ npm start -- get ./demo/config/bookmarks.yaml -d="./demo"
 ```
 
 ### Testing
