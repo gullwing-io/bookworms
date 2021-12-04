@@ -26,7 +26,7 @@ Bookmarks have a standard HTML structure for importing and exporting, Bookworms 
 * [Firefox](https://support.mozilla.org/en-US/kb/import-bookmarks-html-file)
 * [Brave](https://support.brave.com/hc/en-us/articles/360019782291-How-do-I-import-or-export-browsing-data-)
 
-You can find instructions of how to important on the links above. Other browsers might also work but they have not yet been tested.
+You can find instructions of how to import bookmarks on the links above, other browsers might also work but they have not yet been tested.
 
 #### Example of importing bookmarks into Chrome
 
