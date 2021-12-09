@@ -9,6 +9,15 @@ _These bookmarks were last updated on Invalid Date using [Bookworms](https://git
 "
 `;
 
+exports[`Templates - Readme bookmark should return structure for Readme bookmarks with blank label 1`] = `
+"
+
+Bookmarks description
+_Children markdown_
+_These bookmarks were last updated on Invalid Date using [Bookworms](https://github.com/thearegee/bookworms)_
+"
+`;
+
 exports[`Templates - Readme bookmarkFolder should return description, header and children 1`] = `
 "
 # Section label
