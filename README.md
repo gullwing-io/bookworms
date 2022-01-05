@@ -43,11 +43,11 @@ folders:
             href: https://www.mywebsite.com
 ```
 
-* `label` - The heading of your bookmarks or the folder
-* `description` - Generates a `HTML` comment or text within `markdown`
-* `folders` - A way of grouping together bookmarks, you can nest these as deep as you like
-* `bookmarks` - How you group the information for a bookmark link
-* `href` - The URL you want to bookmark
+- `label` - The heading of your bookmarks or the folder
+- `description` - Generates a `HTML` comment or text within `markdown`
+- `folders` - A way of grouping together bookmarks, you can nest these as deep as you like
+- `bookmarks` - How you group the information for a bookmark link
+- `href` - The URL you want to bookmark
 
 Once this is ready you can pass it to Bookworms using [`npx`](https://nodejs.dev/learn/the-npx-nodejs-package-runner).
 
@@ -81,23 +81,21 @@ npx bookworms --help
 
 If you want to understand more about Bookworms you can read the following:
 
-* [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md)
-* [For developers](./docs/DEVELOPERS.md)
+- [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md)
+- [For developers](./docs/DEVELOPERS.md)
 
 ## Todo
 
-* Support for other tools for bookmarks
-  * Notion
-  * Google docs
-* Support multiple YMAL files and merging together
-* Bug fix markdown generator header folder depth
-* Convert existing exported bookmarks into YAML
-* Improve documentation for using bookworms modules
-* Allow users to select the exports they want or won't want
-* Set up GitHub actions for repo to build, test and publish in NPM
+- Support multiple YMAL files and merging together
+- Bug fix markdown generator header folder depth
+- Convert existing exported bookmarks into YAML
+- Improve documentation for using bookworms modules
+- Allow users to select the exports they want or won't want
+- Set up GitHub actions for repo to build, test and publish in NPM
 
 ## Future
 
-* Create GitHub action to update bookmark repos without `npx`
-* Remove step for people to need to import files in browser
-* Add the idea of public bookmarks which could genate trends
+- Create GitHub action to update bookmark repos without `npx`
+- Remove step for people to need to import files in browser
+- Add the idea of public bookmarks which could genate trends
+- Make a chrome extension that could load remote YAML files
