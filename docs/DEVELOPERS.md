@@ -29,7 +29,7 @@ Add into your `.package.json`:
 You can now import Bookworms into your project.
 
 ```JS
-import {loadBookmarks, generateBookmarks, saveBookmarks} from 'bookworms';
+import {loadBookmarks, generateBookmarks, saveBookmarks, mergeBookmarks} from 'bookworms';
 ```
 
 These give you access to different functions used to generate Bookmarks.
@@ -38,32 +38,39 @@ These give you access to different functions used to generate Bookmarks.
 
 A collection of helpers for loading bookmarks.
 
-* `fetchBookmarkConfig(path)` - load local or remote bookmarks from path
-* `shouldFetchFromLocal(path)` - undersstand if a path is local or remote
-* `fetchLocaleBookmarkConfig(path)` - load bookmarks from `fs`
-* `fetchRemoteBoomarkConfig(path)` - load bookmarks from `http` request
-* `returnResponseAsJsonOn2xx(body, statusCode, path)` - handle non 2xx `http` responses
-* `returnResponseAsObject(response, path)` - return javascript object, converting YAML or JSON
+- `fetchBookmarkConfig(path)` - load local or remote bookmarks from path
+- `shouldFetchFromLocal(path)` - undersstand if a path is local or remote
+- `fetchLocaleBookmarkConfig(path)` - load bookmarks from `fs`
+- `fetchRemoteBoomarkConfig(path)` - load bookmarks from `http` request
+- `returnResponseAsJsonOn2xx(body, statusCode, path)` - handle non 2xx `http` responses
+- `returnResponseAsObject(response, path)` - return javascript object, converting YAML or JSON
 
 #### `generateBookmarks`
 
 A collection of helpers for generating bookmarks.
 
-* `createBookmarks(bookmarks, directory)` - create string of bookmarks to be used in other tools
-* `generateImportBookmarkMarkup(config)` - from loaded bookmark config create the different types of exports wanted
-* `traverseStructure({ bookmarks, folders }, type)` - traverse the strutcure of the bookmarks
-* `traverseFolders(folders, type)` - traverse the folders within the bookmarks
-* `traverseBookmarks(bookmarks, type)` - traverse the individual bookmarks within the bookmark config
-* `generateBookmarkFolderMarkup(index, label, description, children, type)` - pass values into template and get back string of folder markup
-* `generateBookmarkLinkMarkup(bookmark, type)` - pass values into template and get back string of bookmark markup
-* `generateTimeStamp()` - generate timestamp for when Bookworms was run
+- `createBookmarks(path, directory)` - load bookmarks from path, generate bookmarks are store in a directory
+- `generateImportBookmarkMarkup(config)` - from loaded bookmark config create the different types of exports wanted
+- `traverseStructure({ bookmarks, folders }, type)` - traverse the strutcure of the bookmarks
+- `traverseFolders(folders, type)` - traverse the folders within the bookmarks
+- `traverseBookmarks(bookmarks, type)` - traverse the individual bookmarks within the bookmark config
+- `generateBookmarkFolderMarkup(index, label, description, children, type)` - pass values into template and get back string of folder markup
+- `generateBookmarkLinkMarkup(bookmark, type)` - pass values into template and get back string of bookmark markup
+- `generateTimeStamp()` - generate timestamp for when Bookworms was run
 
-#### `generateBookmarks`
+#### `saveBookmarks`
 
 A collection of helpers for saving bookmarks.
 
-* `writeBookmarks(directory, bookmarks)` - Writing the bookmark populated templates to `fs`
-* `trimTrailingSlash(directory)` - remove trailing slashes from string
+- `writeBookmarks(directory, bookmarks)` - Writing the bookmark populated templates to `fs`
+- `trimTrailingSlash(directory)` - remove trailing slashes from string
+
+#### `mergeBookmarks`
+
+A collection of helpers for merging and generating bookmarks.
+
+- `createBookmarks(bookmarkPaths, directory, label, descriptions)` - load mutliple bookmarks from paths, merge into new config allowing custom label and description, generate bookmarks are store in a directory
+- `mergedBookmark(bookmarkPaths, label, descriptions)` - load mutliple bookmarks from paths, merge into new config allowing custom label and description
 
 ## Contributing to Bookworms
 
@@ -80,7 +87,7 @@ $ npm i
 
 Within the `./bin` folder you have a script you can execute, which can be done in a couple of ways:
 
-``` BASH
+```BASH
 # Directly from node
 $ node --experimental-vm-modules ./bin/index.js
 # npm
@@ -89,22 +96,24 @@ $ npm start
 
 All of these will return the following:
 
-``` BASH
+```BASH
 index.js [command]
 
 Commands:
-  index.js get <bookmarks>  Local path or remote URL
+  index.js get <bookmarks>      Local path or remote URL
+  index.js merge <bookmarks..>  Array of paths or URLs you want to merge
 
 Options:
-      --help       Show help                                           [boolean]
       --version    Show version number                                 [boolean]
   -d, --directory  The directory where the files are generated
                                                         [string] [default: "./"]
+      --help       Show help                                           [boolean]
       --bookmarks                                                     [required]
 
 Missing required argument: bookmarks
 You need to supply the location of your bookmarks
 ```
+
 You can see that there was no bookmarks passed, these are two examples you could use:
 
 ```BASH
@@ -119,6 +128,23 @@ by default this will export the files into `./` but if you want to change this y
 ```BASH
 # Locale config
 $ npm start -- get ./demo/config/bookmarks.yaml -d="./demo"
+```
+
+If you are merging bookmarks you have some additional options:
+
+```Bash
+index.js merge <bookmarks..>
+
+Array of paths or URLs you want to merge
+
+Options:
+      --version    Show version number                                 [boolean]
+  -d, --directory  The directory where the files are generated
+                                                        [string] [default: "./"]
+      --help       Show help                                           [boolean]
+  -t, --text       Description of your top level bookmarks folder       [string]
+  -l, --label      Top level folder name for merged bookmarks           [string]
+      --bookmarks                                                     [required]
 ```
 
 ### Testing

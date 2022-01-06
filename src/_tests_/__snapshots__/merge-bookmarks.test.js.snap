@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`merging different bookmark configs together mergedBookmark should return merged bookmarks with default label and description 1`] = `
+Object {
+  "description": "Multiple bookmarks merged",
+  "folders": Array [
+    Object {
+      "description": "These are sample bookmarks to teach you how Bookworms works",
+      "folders": Array [
+        Object {
+          "description": "This is to describe the folder structure",
+          "folders": Array [
+            Object {
+              "bookmarks": Array [
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 1",
+                },
+              ],
+              "description": "This is to describe the sub folder structure",
+              "label": "sub folder 1",
+            },
+          ],
+          "label": "folder 1",
+        },
+        Object {
+          "folders": Array [
+            Object {
+              "bookmarks": Array [
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 2",
+                },
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 3",
+                },
+              ],
+              "label": "sub folder 2",
+            },
+            Object {
+              "bookmarks": Array [
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 4",
+                },
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 5",
+                },
+              ],
+              "label": "sub folder 3",
+            },
+          ],
+          "label": "folder 2",
+        },
+      ],
+      "label": "Bookworms",
+    },
+    Object {
+      "description": "These are sample bookmarks to merge with bookmarks.yaml",
+      "folders": Array [
+        Object {
+          "description": "This is to describe the folder structure",
+          "folders": Array [
+            Object {
+              "bookmarks": Array [
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 1",
+                },
+              ],
+              "description": "This is to describe the sub folder structure",
+              "label": "sub folder 1",
+            },
+          ],
+          "label": "folder 3",
+        },
+      ],
+      "label": "Bookworms for merging",
+    },
+  ],
+  "label": "Merged worms",
+}
+`;
+
+exports[`merging different bookmark configs together mergedBookmark should return merged bookmarks with set label and description 1`] = `
+Object {
+  "description": "merging different YAML files",
+  "folders": Array [
+    Object {
+      "description": "These are sample bookmarks to teach you how Bookworms works",
+      "folders": Array [
+        Object {
+          "description": "This is to describe the folder structure",
+          "folders": Array [
+            Object {
+              "bookmarks": Array [
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 1",
+                },
+              ],
+              "description": "This is to describe the sub folder structure",
+              "label": "sub folder 1",
+            },
+          ],
+          "label": "folder 1",
+        },
+        Object {
+          "folders": Array [
+            Object {
+              "bookmarks": Array [
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 2",
+                },
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 3",
+                },
+              ],
+              "label": "sub folder 2",
+            },
+            Object {
+              "bookmarks": Array [
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 4",
+                },
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 5",
+                },
+              ],
+              "label": "sub folder 3",
+            },
+          ],
+          "label": "folder 2",
+        },
+      ],
+      "label": "Bookworms",
+    },
+    Object {
+      "description": "These are sample bookmarks to merge with bookmarks.yaml",
+      "folders": Array [
+        Object {
+          "description": "This is to describe the folder structure",
+          "folders": Array [
+            Object {
+              "bookmarks": Array [
+                Object {
+                  "description": "this is used to describe the bookmark",
+                  "href": "https://www.mywebsite.com",
+                  "label": "sample url 1",
+                },
+              ],
+              "description": "This is to describe the sub folder structure",
+              "label": "sub folder 1",
+            },
+          ],
+          "label": "folder 3",
+        },
+      ],
+      "label": "Bookworms for merging",
+    },
+  ],
+  "label": "All my bookmarks",
+}
+`;

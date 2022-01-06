@@ -1,4 +1,6 @@
-# Bookworms
+<p align="center">
+  <img width="50%" src="./docs/img/logo.png">
+</p>
 
 > Centralise your bookmarks as `YAML` configuration and export them into different formats that can be used with your existing tools.
 
@@ -63,13 +65,13 @@ $ ls
 browsers.html readme.md
 ```
 
-You can also fetch bookmarks from a remote location and output the exports into a directory:
+You can also fetch bookmarks from a remote location:
 
 ```BASH
-npx bookworms get https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml -d="./output"
+npx bookworms get https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml
 ```
 
-For more information about how to use these files see: [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md)
+For more information about how to use these files see: [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md) or if you want to see other options available to you see: [Advanced usage](./docs/ADVANCED-USAGE.md).
 
 ## Help
 
@@ -81,14 +83,14 @@ npx bookworms --help
 
 If you want to understand more about Bookworms you can read the following:
 
+- [Advanced usage](./docs/ADVANCED-USAGE.md)
 - [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md)
 - [For developers](./docs/DEVELOPERS.md)
 
 ## Todo
 
-- Support multiple YMAL files and merging together
+- Convert existing exported bookmarks HTML into YAML
 - Bug fix markdown generator header folder depth
-- Convert existing exported bookmarks into YAML
 - Improve documentation for using bookworms modules
 - Allow users to select the exports they want or won't want
 - Set up GitHub actions for repo to build, test and publish in NPM
@@ -99,3 +101,4 @@ If you want to understand more about Bookworms you can read the following:
 - Remove step for people to need to import files in browser
 - Add the idea of public bookmarks which could genate trends
 - Make a chrome extension that could load remote YAML files
+- Rewrite in TS
