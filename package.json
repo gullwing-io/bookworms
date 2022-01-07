@@ -32,6 +32,9 @@
   "dependencies": {
     "got": "^11.8.2",
     "js-yaml": "^4.1.0",
+    "json-stringify-safe": "^5.0.1",
+    "uuid": "^8.3.2",
+    "xml2json-light": "^1.0.6",
     "yargs": "^17.2.1"
   },
   "devDependencies": {

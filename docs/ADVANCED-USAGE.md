@@ -13,7 +13,6 @@ $ npx bookworms get ./my-bookmarks.yaml
 This will then generate in the `./` folder the different exports you can then use in your older tools.
 
 ```BASH
-$ cd output
 $ ls
 browsers.html readme.md
 ```
@@ -26,7 +25,7 @@ $ npx bookworms get https://raw.githubusercontent.com/thearegee/bookworms/main/d
 
 ## Merge
 
-`merge` works the same as `get` with the same options but it allows you to create bookmarks from multiple local or remote `YAML`.
+`merge` works in a similar way to `get` with the same options but it allows you to create bookmarks from multiple local or remote `YAML`.
 
 ```BASH
 $ npx bookworms merge ./my-bookmarks.yaml ./my-company-bookmarks.yaml https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml
@@ -36,4 +35,28 @@ In this example Bookworms is merging together multiple bookmark `YAML` files it 
 
 ```BASH
 $ npm start -- merge ./my-bookmarks.yaml ./my-company-bookmarks.yaml https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml -l="My bookmarks" -t="Bookmarks my personal bookmarks, my bookmarks from work and remote bookmarks that interest me"
+```
+
+## Covert
+
+`covert` works in a similar way to `get` with the same options.
+
+```BASH
+$ npx convert ./browsers.html -d="./output"
+```
+
+```BASH
+$ ls
+converted-bookmarks.yaml
+```
+
+You can also override the default filname.
+
+```BASH
+$ npx convert ./browsers.html -f="./my-bookmarks.yaml"
+```
+
+```BASH
+$ ls
+my-bookmarks.yaml
 ```

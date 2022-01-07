@@ -78,7 +78,7 @@ describe("Templates - Readme", () => {
   });
   describe("addDescription", () => {
     test("should return description comment", () => {
-      expect(addDescription("hello world")).toEqual("hello world");
+      expect(addDescription("hello world")).toEqual("- hello world");
     });
     test("should return empty string", () => {
       expect(addDescription("")).toEqual("");

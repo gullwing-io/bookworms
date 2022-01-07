@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
-import { generateBookmarks, mergeBookmarks } from "../src/index.js";
+import {
+  generateBookmarks,
+  mergeBookmarks,
+  convertBookmarks,
+} from "../src/index.js";
 
 const getCommand = {
   command: "get <bookmarks>",
@@ -40,6 +44,28 @@ const mergeCommand = {
   },
 };
 
+const convertCommand = {
+  command: "convert <bookmarks>",
+  desc: "Local path of exported browser bookmarks",
+  builder: (yargs) => {
+    yargs.option("f", {
+      alias: "filename",
+      default: "converted-bookmarks.yaml",
+      demandOption: false,
+      describe: "The name you want to fice the converted YAML",
+      type: "string",
+    });
+  },
+  handler: (argv) => {
+    console.log("COVERTING BOOKMARKS");
+    convertBookmarks.createBookmarks(
+      argv.bookmarks,
+      argv.directory,
+      argv.filename
+    );
+  },
+};
+
 yargs(hideBin(process.argv))
   .option("d", {
     alias: "directory",
@@ -54,4 +80,5 @@ yargs(hideBin(process.argv))
   )
   .command(getCommand)
   .command(mergeCommand)
+  .command(convertCommand)
   .help().argv;

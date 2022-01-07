@@ -72,6 +72,16 @@ A collection of helpers for merging and generating bookmarks.
 - `createBookmarks(bookmarkPaths, directory, label, descriptions)` - load mutliple bookmarks from paths, merge into new config allowing custom label and description, generate bookmarks are store in a directory
 - `mergedBookmark(bookmarkPaths, label, descriptions)` - load mutliple bookmarks from paths, merge into new config allowing custom label and description
 
+#### `convertBookmarks`
+
+A collection of helpers for converting browsers `HTML` export of bookmarks into `YAML`.
+
+- `parseHTMLtoJSON(path)` - browsers `HTML` export of bookmarks into JSON, this data is not normalised for Bookworms
+- `generateBookwormJSON(json)` - takes the `JSON` from `parseHTMLtoJSON` and normalises it into a format Bookworms understands
+- `traverseStructure(json)` - traverses `parseHTMLtoJSON` JSON to return a deep `JSON` structure for `generateBookwormJSON`
+- `convertHTMLtoYAML(path)` - Pass `HTML` to this function and it will return `YAML` that matches Bookmarks schema
+- `createBookmarks(path, directory, filename)` - Generate `YAML` from browsers `HTML` export of bookmarks and store to disk based on option
+
 ## Contributing to Bookworms
 
 If you want to add features to Bookworms you will need to know how to work with the project.

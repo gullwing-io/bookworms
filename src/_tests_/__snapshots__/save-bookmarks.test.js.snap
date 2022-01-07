@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`saving bookmarks writeBookmark should write bookmark file 1`] = `"<div>hello world</div>"`;
+
 exports[`saving bookmarks writeBookmarks should write bookmark files 1`] = `"<div>hello world</div>"`;
 
 exports[`saving bookmarks writeBookmarks should write bookmark files 2`] = `"_hello world_"`;

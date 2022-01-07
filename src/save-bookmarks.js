@@ -1,19 +1,23 @@
-import { mkdirSync, writeFileSync } from 'fs';
+import { mkdirSync, writeFileSync } from "fs";
 
 const writeBookmarks = (directory, bookmarks) => {
-    bookmarks.forEach(({filename, body})=> {
-        try {
-            mkdirSync(directory, { recursive: true});
-            writeFileSync(`${trimTrailingSlash(directory)}/${filename}`, body)
-        } catch (error) {
-            // todo write test for this error condition
-            console.error(error.message)
-        }
-    })
-}
+  bookmarks.forEach(({ filename, body }) => {
+    writeBookmark(body, directory, filename);
+  });
+};
+
+const writeBookmark = (content, directory, filename) => {
+  try {
+    mkdirSync(directory, { recursive: true });
+    writeFileSync(`${trimTrailingSlash(directory)}/${filename}`, content);
+  } catch (error) {
+    // todo write test for this error condition
+    console.error(error.message);
+  }
+};
 
 const trimTrailingSlash = (directory) => {
-    return directory.replace(/\/$/, "");
-}
+  return directory.replace(/\/$/, "");
+};
 
-export {writeBookmarks, trimTrailingSlash}
+export { writeBookmarks, writeBookmark, trimTrailingSlash };

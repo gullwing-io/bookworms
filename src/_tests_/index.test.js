@@ -3,6 +3,7 @@ import {
   generateBookmarks,
   saveBookmarks,
   mergeBookmarks,
+  convertBookmarks,
 } from "../index";
 
 describe("Checking modules are exported", () => {
@@ -17,5 +18,8 @@ describe("Checking modules are exported", () => {
   });
   test("should return mergeBookmarks", () => {
     expect(mergeBookmarks).toBeDefined();
+  });
+  test("should return convertBookmarks", () => {
+    expect(convertBookmarks).toBeDefined();
   });
 });

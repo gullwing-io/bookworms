@@ -3,7 +3,7 @@
 exports[`generating bookmarks structure generateBookmarkFolderMarkup should return structure for Readme folder 1`] = `
 "
 # Readme folder
-Readme folder description
+- Readme folder description
 _Children markdown_
     "
 `;
@@ -83,19 +83,19 @@ Array [
   Object {
     "body": "
 # Bookmarks config
-Bookmarks config description
+- Bookmarks config description
 
 ## Folder 1
-Folder description 1
+- Folder description 1
 
 * [Link 1](https://www.testlink1.com) - Bookmark 1
 
     
 ## Folder 2
-Folder description 2
+- Folder description 2
 
 ## Folder 2.1
-Folder description 2.1
+- Folder description 2.1
 
 * [Link 2](https://www.testlink2.com) - Bookmark 2
 
@@ -131,11 +131,11 @@ exports[`generating bookmarks structure traverseBookmarks should return structur
 exports[`generating bookmarks structure traverseFolders should return simple structure for Readme folders 1`] = `
 "
 ## Readme folder 1
-Readme folder description 1
+- Readme folder description 1
 
     
 ## Readme folder 2
-Readme folder description 2
+- Readme folder description 2
 
     "
 `;
@@ -159,15 +159,15 @@ exports[`generating bookmarks structure traverseFolders should return simple str
 exports[`generating bookmarks structure traverseFolders should return structure for nested Readme folders 1`] = `
 "
 ## Readme folder 1
-Readme folder description 1
+- Readme folder description 1
 
 ## Readme folder 1.1
-Readme folder description 1.1
+- Readme folder description 1.1
 
     
     
 ## Readme folder 2
-Readme folder description 2
+- Readme folder description 2
 
     "
 `;
@@ -197,16 +197,16 @@ exports[`generating bookmarks structure traverseFolders should return structure 
 exports[`generating bookmarks structure traverseStructure should return structure for Readme bookmarks 1`] = `
 "
 ## Readme folder 1
-Readme folder description 1
+- Readme folder description 1
 
 * [Readme link 1](https://www.testlink1.com) - Readme bookmark 1
 
     
 ## Readme folder 2
-Readme folder description 2
+- Readme folder description 2
 
 ## Readme folder 2.1
-Readme folder description 2.1
+- Readme folder description 2.1
 
 * [Readme link 2](https://www.testlink2.com) - Readme bookmark 2
 

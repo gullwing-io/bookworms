@@ -25,7 +25,7 @@ const convertNumberIntoHeader = (index, label) => {
 
 const bookmarkLink = (label, description, href) => {
   return `
-* [${label}](${href}) - ${addDescription(description)}
+* [${label}](${href}) ${addDescription(description)}
 `;
 };
 
@@ -39,7 +39,7 @@ const addTitle = (title) => {
 
 const addDescription = (description) => {
   if (description) {
-    return `${description}`;
+    return `- ${description}`;
   } else {
     return ``;
   }
