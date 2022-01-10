@@ -25,7 +25,7 @@ const generateImportBookmarkMarkup = (config) => {
       ),
     },
     {
-      filename: "readme.md",
+      filename: "README.md",
       body: readme.bookmark(
         generateTimeStamp(),
         config.label,

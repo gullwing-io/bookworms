@@ -15,7 +15,7 @@ describe("saving bookmarks", () => {
           body: "<div>hello world</div>",
         },
         {
-          filename: "readme.md",
+          filename: "README.md",
           body: "_hello world_",
         },
       ];

@@ -67,7 +67,7 @@ This will then generate in the `./` directory the different exports you can then
 ```BASH
 $ cd output
 $ ls
-browsers.html readme.md
+browsers.html README.md
 ```
 
 To fetch bookmarks from a remote location just use a standard `http` URL:
@@ -76,7 +76,7 @@ To fetch bookmarks from a remote location just use a standard `http` URL:
 $ npx bookworms get https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml
 ```
 
-Now you can import the `browsers.html` to display your bookmarks in your browser or the `readme.md` into your projects, for more information on how to use these files see [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md) or if you want to see other options available to you see [Advanced usage](./docs/ADVANCED-USAGE.md).
+Now you can import the `browsers.html` to display your bookmarks in your browser or the `README.md` into your projects, for more information on how to use these files see [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md) or if you want to see other options available to you see [Advanced usage](./docs/ADVANCED-USAGE.md).
 
 ## Help
 

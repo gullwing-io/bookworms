@@ -10,14 +10,14 @@ You can now convert this into `YAML` using the following command:
 $ npx convert ./bookmarks.html
 ```
 
-This will then generate in the `./` folder a `YAML` file that Bookworms can .
+This will then generate a `YAML` file in the `./` directory. This can then be used by Bookworms.
 
 ```BASH
 $ ls
 converted-bookmarks.yaml
 ```
 
-You can now use the `get` command to generate both the `readme.md` and `browsers.html` files. Something to consider however is browsers don't contain descriptions for links so your `YAML` will look something like this:
+Use the `get` command to generate both the `README.md` and `browsers.html` files. Something to consider however is browsers don't contain descriptions for links so your `YAML` will look something like this:
 
 ```YAML
 label: Bookworms
@@ -45,7 +45,7 @@ folders:
             href: https://www.mywebsite.com
 ```
 
-While importing this into the browser will work fine, your `readme.md` links will be missing a description:
+While importing this into the browser will work fine, your `README.md` links will be missing a description:
 
 ```markdown
 - [sample url 1](https://www.mywebsite.com)

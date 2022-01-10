@@ -14,7 +14,7 @@ This will then generate in the `./` directory the different exports you can then
 
 ```BASH
 $ ls
-browsers.html readme.md
+browsers.html README.md
 ```
 
 You can also fetch bookmarks from a remote location and output the exports into a directory:

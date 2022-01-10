@@ -1,12 +1,12 @@
 
 # Bookworms
-These are sample bookmarks to teach you how Bookworms works
+- These are sample bookmarks to teach you how Bookworms works
 
 ## folder 1
-This is to describe the folder structure
+- This is to describe the folder structure
 
 ## sub folder 1
-This is to describe the sub folder structure
+- This is to describe the sub folder structure
 
 * [sample url 1](https://www.mywebsite.com) - this is used to describe the bookmark
 
@@ -32,4 +32,4 @@ This is to describe the sub folder structure
 
     
     
-_These bookmarks were last updated on 07/01/2022, 19:06:52 using [Bookworms](https://github.com/thearegee/bookworms)_
+_These bookmarks were last updated on 10/01/2022, 14:59:14 using [Bookworms](https://github.com/thearegee/bookworms)_
