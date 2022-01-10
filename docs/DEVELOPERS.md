@@ -1,6 +1,6 @@
 # Developers
 
-If you want to contribute or are interested in building something with bookworms here is how to get started.
+If you want to contribute or are interested in building something with Bookworms here is how to get started.
 
 ## Importing Bookworms modules
 

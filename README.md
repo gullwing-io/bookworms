@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.jamesbarryillustration.com/">
-    <img width="25%" src="./docs/img/logo.png">
+    <img width="50%" src="./docs/img/logo.png">
   </a>
 </p>
 
@@ -59,10 +59,10 @@ If you already have bookmarks in your browser you can speed up the process of co
 Once this is ready you can pass it to Bookworms using [`npx`](https://nodejs.dev/learn/the-npx-nodejs-package-runner).
 
 ```BASH
-npx bookworms get ./my-bookmarks.yaml
+$ npx bookworms get ./my-bookmarks.yaml
 ```
 
-This will then generate in the `./` folder the different exports you can then use in your older tools.
+This will then generate in the `./` directory the different exports you can then use in your older tools.
 
 ```BASH
 $ cd output
@@ -70,20 +70,20 @@ $ ls
 browsers.html readme.md
 ```
 
-You can also fetch bookmarks from a remote location:
+To fetch bookmarks from a remote location just use a standard `http` URL:
 
 ```BASH
-npx bookworms get https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml
+$ npx bookworms get https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml
 ```
 
-You can then import the `browsers.html` to display your bookmarks in your browser or the `readme.md` into your projects, for more information on how to use these files see [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md) or if you want to see other options available to you see [Advanced usage](./docs/ADVANCED-USAGE.md).
+Now you can import the `browsers.html` to display your bookmarks in your browser or the `readme.md` into your projects, for more information on how to use these files see [Using your bookmarks](./docs/USING-YOUR-BOOKMARKS.md) or if you want to see other options available to you see [Advanced usage](./docs/ADVANCED-USAGE.md).
 
 ## Help
 
 If you need help using Bookworms you can run this command:
 
 ```Bash
-npx bookworms --help
+$ npx bookworms --help
 ```
 
 If you want to understand more about Bookworms you can read the following:
@@ -96,7 +96,7 @@ If you want to understand more about Bookworms you can read the following:
 ## Todo
 
 - Test `convert` with browsers other than Chrome
-- Bug fix markdown generator header folder depth
+- Bug fix markdown generator header for deep folders
 - Improve documentation for using bookworms modules
 - Allow users to select the exports they want or won't want
 - Set up GitHub actions for repo to build, test and publish in NPM
@@ -105,9 +105,9 @@ If you want to understand more about Bookworms you can read the following:
 
 - Create GitHub action to update bookmark repos without `npx`
 - Remove step for people to need to import files in browser
-- Add the idea of public bookmarks which could genate trends
-- Make a chrome extension that could load remote YAML files
-- Rewrite in TS
+- Add the idea of public bookmarks which could generate trends
+- Investigate a chrome extension that could load remote YAML files
+- Document Murphy Slackbot that uses Bookworms
 
 ## Credits
 

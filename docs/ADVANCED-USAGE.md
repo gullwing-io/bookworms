@@ -1,6 +1,6 @@
 # Advanced usage
 
-The top level [README](../README.md) shows the basic `get` functionality but there are more options and ways to see Bookworms.
+The top level [README](../README.md) shows the basic `get` functionality but there are more options and ways to use Bookworms.
 
 ## Get
 
@@ -10,7 +10,7 @@ Create bookmarks from local or remote `YMAL`.
 $ npx bookworms get ./my-bookmarks.yaml
 ```
 
-This will then generate in the `./` folder the different exports you can then use in your older tools.
+This will then generate in the `./` directory the different exports you can then use in your older tools.
 
 ```BASH
 $ ls
@@ -31,7 +31,7 @@ $ npx bookworms get https://raw.githubusercontent.com/thearegee/bookworms/main/d
 $ npx bookworms merge ./my-bookmarks.yaml ./my-company-bookmarks.yaml https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml
 ```
 
-In this example Bookworms is merging together multiple bookmark `YAML` files it will be default merge them into one top level folder called "Merged worms" but you can override the label and the description with the command:
+In this example Bookworms is merging together multiple bookmark `YAML` files, by default it will merge them into one top level folder called "Merged worms" but you can override the label and the description with the command:
 
 ```BASH
 $ npm start -- merge ./my-bookmarks.yaml ./my-company-bookmarks.yaml https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml -l="My bookmarks" -t="Bookmarks my personal bookmarks, my bookmarks from work and remote bookmarks that interest me"
@@ -39,7 +39,10 @@ $ npm start -- merge ./my-bookmarks.yaml ./my-company-bookmarks.yaml https://raw
 
 ## Covert
 
-`covert` works in a similar way to `get` with the same options.
+If you already have bookmarks in your browser you can speed up the process of converting them into `YAML` using the `convert` tool, read more about that here:
+[Exporting existing bookmarks](./docs/EXPORTING-EXISTING-BOOKMARKS.md).
+
+The `covert` command works in a similar way to `get` with the same options.
 
 ```BASH
 $ npx convert ./browsers.html -d="./output"
