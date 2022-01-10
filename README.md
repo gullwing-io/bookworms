@@ -103,6 +103,7 @@ If you want to understand more about Bookworms you can read the following:
 
 ### Future
 
+- A way to state who owns a certain tool, if someone needs to get access to it
 - Create GitHub action to update bookmark repos without `npx`
 - Remove step for people to need to import files in browser
 - Add the idea of public bookmarks which could generate trends
