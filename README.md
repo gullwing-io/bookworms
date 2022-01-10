@@ -10,6 +10,8 @@ In a large company there are literally thousands of tools, environments and HR s
 
 This tool is designed to help teams share URLs, keep them updo date and consistent in their tools of choice.
 
+_Read more about the motivations behind this project here: [How I centralize and distribute my bookmarks](https://medium.com/@robinglen/how-i-centralize-and-distribute-my-bookmarks-cc8b11bb7475)._
+
 ## Getting started
 
 First thing you need to do is create your bookmarks `YAML` configuration, below is an example:
