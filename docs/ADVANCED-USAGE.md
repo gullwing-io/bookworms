@@ -37,12 +37,12 @@ In this example Bookworms is merging together multiple bookmark `YAML` files, by
 $ npm start -- merge ./my-bookmarks.yaml ./my-company-bookmarks.yaml https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml -l="My bookmarks" -t="Bookmarks my personal bookmarks, my bookmarks from work and remote bookmarks that interest me"
 ```
 
-## Covert
+## Convert
 
 If you already have bookmarks in your browser you can speed up the process of converting them into `YAML` using the `convert` tool, read more about that here:
 [Exporting existing bookmarks](./docs/EXPORTING-EXISTING-BOOKMARKS.md).
 
-The `covert` command works in a similar way to `get` with the same options.
+The `convert` command works in a similar way to `get` with the same options.
 
 ```BASH
 $ npx convert ./browsers.html -d="./output"

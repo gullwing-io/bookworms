@@ -57,7 +57,7 @@ const convertCommand = {
     });
   },
   handler: (argv) => {
-    console.log("COVERTING BOOKMARKS");
+    console.log("CONVERTING BOOKMARKS");
     convertBookmarks.createBookmarks(
       argv.bookmarks,
       argv.directory,
