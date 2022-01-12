@@ -5,6 +5,7 @@ import {
   generateBookmarks,
   mergeBookmarks,
   convertBookmarks,
+  checkBookmarks,
 } from "../src/index.js";
 
 const getCommand = {
@@ -66,6 +67,24 @@ const convertCommand = {
   },
 };
 
+const checkCommand = {
+  command: "check <bookmarks>",
+  desc: "Local path of exported browser bookmarks",
+  handler: async (argv) => {
+    console.log("CHECKING BOOKMARKS");
+    const checkResult = await checkBookmarks.checkBookmarks(
+      argv.bookmarks,
+      argv.directory
+    );
+    if (!checkResult) {
+      console.log("Bookmarks are not up to date");
+      process.exitCode = 1;
+      return;
+    }
+    console.log("Bookmarks are up to date");
+  },
+};
+
 yargs(hideBin(process.argv))
   .option("d", {
     alias: "directory",
@@ -81,4 +100,5 @@ yargs(hideBin(process.argv))
   .command(getCommand)
   .command(mergeCommand)
   .command(convertCommand)
+  .command(checkCommand)
   .help().argv;
