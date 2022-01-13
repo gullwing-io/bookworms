@@ -4,6 +4,7 @@ import {
   saveBookmarks,
   mergeBookmarks,
   convertBookmarks,
+  checkBookmarks,
 } from "../index";
 
 describe("Checking modules are exported", () => {
@@ -21,5 +22,8 @@ describe("Checking modules are exported", () => {
   });
   test("should return convertBookmarks", () => {
     expect(convertBookmarks).toBeDefined();
+  });
+  test("should return checkBookmarks", () => {
+    expect(checkBookmarks).toBeDefined();
   });
 });

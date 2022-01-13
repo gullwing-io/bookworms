@@ -63,3 +63,17 @@ $ npx convert ./browsers.html -f="./my-bookmarks.yaml"
 $ ls
 my-bookmarks.yaml
 ```
+
+## Check
+
+Check whether current generated files are up to date with the yaml file.
+This can be used either in a git hook or in your CI to make sure the output files have been changed after a change to the yaml file.
+
+The `check` command works in a similar way to `get` with the same options.
+
+```BASH
+$ npx bookworms check ./my-bookmarks.yaml
+```
+
+This will print whether the generated bookmark files are up to date.
+The process will also exit with exit code 0 if the files are up to date, and 1 if not.
