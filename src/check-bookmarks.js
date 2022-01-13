@@ -36,4 +36,4 @@ const checkSingleBookmark = (generatedBookmark, directory) => {
   return checkBookmarkBody(existingBookmark, generatedBookmark.body);
 }
 
-export { checkBookmarks, checkSingleBookmark as checkBookmark, sanitizeDynamicData, checkBookmarkBody };
+export { checkBookmarks, checkSingleBookmark, sanitizeDynamicData, checkBookmarkBody };

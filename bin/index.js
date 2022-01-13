@@ -78,8 +78,7 @@ const checkCommand = {
     );
     if (!checkResult) {
       console.log("Bookmarks are not up to date");
-      process.exitCode = 1;
-      return;
+      process.exit(1);
     }
     console.log("Bookmarks are up to date");
   },
