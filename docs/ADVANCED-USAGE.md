@@ -67,6 +67,7 @@ my-bookmarks.yaml
 ## Check
 
 Check whether current generated files are up to date with the yaml file.
+This can be used either in a git hook or in your CI to make sure the output files have been changed after a change to the yaml file.
 
 The `check` command works in a similar way to `get` with the same options.
 

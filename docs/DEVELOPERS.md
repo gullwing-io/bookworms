@@ -82,6 +82,15 @@ A collection of helpers for converting browsers `HTML` export of bookmarks into 
 - `convertHTMLtoYAML(path)` - Pass `HTML` to this function and it will return `YAML` that matches Bookmarks schema
 - `createBookmarks(path, directory, filename)` - Generate `YAML` from browsers `HTML` export of bookmarks and store to disk based on option
 
+#### `checkBoomkarks`
+
+A collection of helpers for checking whether the output files are up to date with the yaml file.
+
+- `checkBookmarks(path, directory)` - load bookmarks from `path`, and check whether the files generated from it are equivalent to the output files residing in `directory`
+- `sanitizeDynamicData(bookmarkBody)` - sanitizes dynamic data from the bookmark body, to be clean of data which is generated dynamically unrelated to the yaml. Currently, the dynamic data in the output is creation dates.
+- `checkBookmarkBody(existingBookmarkBody, generatedBookmarkBody)` - returns whether 2 output bookmarks files are equivalent (equal except dynamic data).
+- `checkSingleBookmark(generatedBookmark, directory)` - checks whether a bookmark object (with a `filename` and `body`) is equivalent to the output bookmark file with the same name in `directory`.
+
 ## Contributing to Bookworms
 
 If you want to add features to Bookworms you will need to know how to work with the project.
