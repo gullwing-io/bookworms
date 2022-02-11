@@ -51,4 +51,4 @@ While importing this into the browser will work fine, your `README.md` links wil
 - [sample url 1](https://www.mywebsite.com)
 ```
 
-You might want to take the time to add descriptions to the `YAML` to give your users a better experience. For more options on how to convert `HTML` bookmarks to `YAML` see: [Advanced usage](./docs/ADVANCED-USAGE.md).
+You might want to take the time to add descriptions to the `YAML` to give your users a better experience. For more options on how to convert `HTML` bookmarks to `YAML` see: [Advanced usage](./ADVANCED-USAGE.md).

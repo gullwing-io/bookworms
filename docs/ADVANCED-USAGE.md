@@ -40,7 +40,7 @@ $ npm start -- merge ./my-bookmarks.yaml ./my-company-bookmarks.yaml https://raw
 ## Convert
 
 If you already have bookmarks in your browser you can speed up the process of converting them into `YAML` using the `convert` tool, read more about that here:
-[Exporting existing bookmarks](./docs/EXPORTING-EXISTING-BOOKMARKS.md).
+[Exporting existing bookmarks](./EXPORTING-EXISTING-BOOKMARKS.md).
 
 The `convert` command works in a similar way to `get` with the same options.
 
