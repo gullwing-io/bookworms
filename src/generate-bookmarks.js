@@ -21,7 +21,7 @@ const generateImportBookmarkMarkup = (config) => {
         generateTimeStamp(),
         config.label,
         config.description,
-        traverseStructure(config, "browsers", 1)
+        traverseStructure(config, "browsers")
       ),
     },
     {
@@ -30,13 +30,13 @@ const generateImportBookmarkMarkup = (config) => {
         generateTimeStamp(),
         config.label,
         config.description,
-        traverseStructure(config, "readme", 1)
+        traverseStructure(config, "readme")
       ),
     },
   ];
 };
 
-const traverseStructure = ({ bookmarks, folders }, type, index) => {
+const traverseStructure = ({ bookmarks, folders }, type, index = 1) => {
   const arr = [];
   switch (type) {
     case "browsers":
@@ -50,7 +50,7 @@ const traverseStructure = ({ bookmarks, folders }, type, index) => {
   return arr.join("");
 };
 
-const traverseFolders = (folders, type, index) => {
+const traverseFolders = (folders, type, index = 1) => {
   const arr = [];
   if (!folders) {
     return arr;
