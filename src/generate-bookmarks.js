@@ -21,7 +21,7 @@ const generateImportBookmarkMarkup = (config) => {
         generateTimeStamp(),
         config.label,
         config.description,
-        traverseStructure(config, "browsers")
+        traverseStructure(config, "browsers", 1)
       ),
     },
     {
@@ -30,16 +30,16 @@ const generateImportBookmarkMarkup = (config) => {
         generateTimeStamp(),
         config.label,
         config.description,
-        traverseStructure(config, "readme")
+        traverseStructure(config, "readme", 1)
       ),
     },
   ];
 };
 
-const traverseStructure = ({ bookmarks, folders }, type) => {
+const traverseStructure = ({ bookmarks, folders }, type, index) => {
   const arr = [];
   if (folders) {
-    arr.push(traverseFolders(folders, type));
+    arr.push(traverseFolders(folders, type, index));
   }
   if (bookmarks) {
     arr.push(traverseBookmarks(bookmarks, type));
@@ -47,14 +47,13 @@ const traverseStructure = ({ bookmarks, folders }, type) => {
   return arr.join("");
 };
 
-const traverseFolders = (folders, type) => {
+const traverseFolders = (folders, type, index) => {
   const arr = [];
   folders.forEach((folder) => {
-    const children = traverseStructure(folder, type);
-    // todo fix the depth of folder headings for Readme
+    const children = traverseStructure(folder, type, index + 1);
     arr.push(
       generateBookmarkFolderMarkup(
-        1,
+        index,
         folder.label,
         folder.description,
         children,
