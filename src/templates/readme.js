@@ -1,31 +1,34 @@
 const bookmark = (timeDate, label, description, children) => {
-  return `
-${addTitle(label)}
-${addDescription(description)}
-${children}
-${addBookwormsDescription(timeDate)}
-`;
+  const arr = [];
+  arr.push(addTitle(label));
+  if (description) {
+    arr.push(`\n${description}`);
+  }
+  arr.push(children);
+  arr.push(addBookwormsDescription(timeDate));
+  return arr.join("\n");
 };
 
 const bookmarkFolder = (index, label, description, children) => {
-  return `
-${convertNumberIntoHeader(index, label)}
-${addDescription(description)}
-${children}
-    `;
+  const arr = ["\n"];
+  arr.push(convertNumberIntoHeader(index, label));
+  if (description) {
+    arr.push(`\n${description}`);
+  }
+  arr.push(children);
+  return arr.join("\n");
 };
 
 const convertNumberIntoHeader = (index, label) => {
-  const arr = [""];
-  for (let i = 0; i <= index; i++) {
-    arr.push("#");
-  }
-  return `${arr.join("")} ${label}`;
+  return `${"#".repeat(index + 1)} ${label}`;
 };
 
 const bookmarkLink = (label, description, href) => {
+  if (!href) {
+    return ``;
+  }
   return `
-* [${label}](${href}) ${addDescription(description)}
+* [${label ? label : href}](${href}) ${addDescription(description)}
 `;
 };
 
