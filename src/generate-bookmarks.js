@@ -36,25 +36,31 @@ const generateImportBookmarkMarkup = (config) => {
   ];
 };
 
-const traverseStructure = ({ bookmarks, folders }, type) => {
+const traverseStructure = ({ bookmarks, folders }, type, index = 1) => {
   const arr = [];
-  if (folders) {
-    arr.push(traverseFolders(folders, type));
-  }
-  if (bookmarks) {
-    arr.push(traverseBookmarks(bookmarks, type));
+  switch (type) {
+    case "browsers":
+      arr.push(traverseFolders(folders, type, index));
+      arr.push(traverseBookmarks(bookmarks, type));
+      break;
+    case "readme":
+      arr.push(traverseBookmarks(bookmarks, type));
+      arr.push(traverseFolders(folders, type, index));
   }
   return arr.join("");
 };
 
-const traverseFolders = (folders, type) => {
+const traverseFolders = (folders, type, index = 1) => {
   const arr = [];
+  if (!folders) {
+    return arr;
+  }
+
   folders.forEach((folder) => {
-    const children = traverseStructure(folder, type);
-    // todo fix the depth of folder headings for Readme
+    const children = traverseStructure(folder, type, index + 1);
     arr.push(
       generateBookmarkFolderMarkup(
-        1,
+        index,
         folder.label,
         folder.description,
         children,
@@ -67,6 +73,10 @@ const traverseFolders = (folders, type) => {
 
 const traverseBookmarks = (bookmarks, type) => {
   const arr = [];
+  if (!bookmarks) {
+    return arr;
+  }
+
   bookmarks.forEach((bookmark) => {
     arr.push(generateBookmarkLinkMarkup(bookmark, type));
   });

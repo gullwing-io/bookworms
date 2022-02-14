@@ -2,10 +2,11 @@
 
 exports[`generating bookmarks structure generateBookmarkFolderMarkup should return structure for Readme folder 1`] = `
 "
+
 # Readme folder
-- Readme folder description
-_Children markdown_
-    "
+
+Readme folder description
+_Children markdown_"
 `;
 
 exports[`generating bookmarks structure generateBookmarkFolderMarkup should return structure for browsers folder 1`] = `
@@ -35,7 +36,7 @@ exports[`generating bookmarks structure generateImportBookmarkMarkup should retu
 Array [
   Object {
     "body": "
-    <!-- These bookmarks were last updated on Invalid Date using bookworms (https://github.com/thearegee/bookworms) -->
+    <!-- These bookmarks were last updated on 30/09/2021, 19:43:14 using bookworms (https://github.com/thearegee/bookworms) -->
     <!DOCTYPE NETSCAPE-Bookmark-file-1>
 <!-- This is an automatically generated file.
         It will be read and overwritten.
@@ -45,35 +46,35 @@ Array [
 <H1>Bookmarks</H1>
 <!-- Bookmarks config description -->
 <DL><p>
-<DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Bookmarks config</H3>
+<DT><H3 ADD_DATE=\\"1644839488405\\" LAST_MODIFIED=\\"1644839488405\\">Bookmarks config</H3>
 <DL><p>
     
             <!-- Folder description 1 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Folder 1</H3>
+            <DT><H3 ADD_DATE=\\"1644839488405\\" LAST_MODIFIED=\\"1644839488405\\">Folder 1</H3>
 <DL><p>
 
     <!-- Bookmark 1 -->
-    <DT><A HREF=\\"https://www.testlink1.com\\" ADD_DATE=\\"1487076708000\\">Link 1</A>
+    <DT><A HREF=\\"https://www.testlink1.com\\" ADD_DATE=\\"1644839488405\\">Link 1</A>
     
 </DL><p>
     
             <!-- Folder description 2 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Folder 2</H3>
+            <DT><H3 ADD_DATE=\\"1644839488405\\" LAST_MODIFIED=\\"1644839488405\\">Folder 2</H3>
 <DL><p>
 
             <!-- Folder description 2.1 -->
-            <DT><H3 ADD_DATE=\\"1487076708000\\" LAST_MODIFIED=\\"1487076708000\\">Folder 2.1</H3>
+            <DT><H3 ADD_DATE=\\"1644839488405\\" LAST_MODIFIED=\\"1644839488405\\">Folder 2.1</H3>
 <DL><p>
 
     <!-- Bookmark 2 -->
-    <DT><A HREF=\\"https://www.testlink2.com\\" ADD_DATE=\\"1487076708000\\">Link 2</A>
+    <DT><A HREF=\\"https://www.testlink2.com\\" ADD_DATE=\\"1644839488405\\">Link 2</A>
     
 </DL><p>
     
 </DL><p>
     
     <!-- Bookmark 3 -->
-    <DT><A HREF=\\"https://www.testlink3.com\\" ADD_DATE=\\"1487076708000\\">Link 3</A>
+    <DT><A HREF=\\"https://www.testlink3.com\\" ADD_DATE=\\"1644839488405\\">Link 3</A>
     
 </DL><p>
 </DL><p>
@@ -81,30 +82,32 @@ Array [
     "filename": "browsers.html",
   },
   Object {
-    "body": "
-# Bookmarks config
-- Bookmarks config description
+    "body": "# Bookmarks config
+
+Bookmarks config description
+
+* [Link 3](https://www.testlink3.com) - Bookmark 3
+
 
 ## Folder 1
-- Folder description 1
+
+Folder description 1
 
 * [Link 1](https://www.testlink1.com) - Bookmark 1
 
-    
-## Folder 2
-- Folder description 2
 
-## Folder 2.1
-- Folder description 2.1
+## Folder 2
+
+Folder description 2
+
+
+### Folder 2.1
+
+Folder description 2.1
 
 * [Link 2](https://www.testlink2.com) - Bookmark 2
 
-    
-    
-* [Link 3](https://www.testlink3.com) - Bookmark 3
-
-_These bookmarks were last updated on 14/02/2017, 12:51:48 using [Bookworms](https://github.com/thearegee/bookworms)_
-",
+_These bookmarks were last updated on 30/09/2021, 19:43:14 using [Bookworms](https://github.com/thearegee/bookworms)_",
     "filename": "README.md",
   },
 ]
@@ -130,14 +133,16 @@ exports[`generating bookmarks structure traverseBookmarks should return structur
 
 exports[`generating bookmarks structure traverseFolders should return simple structure for Readme folders 1`] = `
 "
+
 ## Readme folder 1
-- Readme folder description 1
 
-    
+Readme folder description 1
+
+
 ## Readme folder 2
-- Readme folder description 2
 
-    "
+Readme folder description 2
+"
 `;
 
 exports[`generating bookmarks structure traverseFolders should return simple structure for browsers folders 1`] = `
@@ -158,18 +163,21 @@ exports[`generating bookmarks structure traverseFolders should return simple str
 
 exports[`generating bookmarks structure traverseFolders should return structure for nested Readme folders 1`] = `
 "
+
 ## Readme folder 1
-- Readme folder description 1
 
-## Readme folder 1.1
-- Readme folder description 1.1
+Readme folder description 1
 
-    
-    
+
+### Readme folder 1.1
+
+Readme folder description 1.1
+
+
 ## Readme folder 2
-- Readme folder description 2
 
-    "
+Readme folder description 2
+"
 `;
 
 exports[`generating bookmarks structure traverseFolders should return structure for nested browsers folders 1`] = `
@@ -196,23 +204,26 @@ exports[`generating bookmarks structure traverseFolders should return structure 
 
 exports[`generating bookmarks structure traverseStructure should return structure for Readme bookmarks 1`] = `
 "
+* [Readme link 3](https://www.testlink3.com) - Readme bookmark 3
+
+
 ## Readme folder 1
-- Readme folder description 1
+
+Readme folder description 1
 
 * [Readme link 1](https://www.testlink1.com) - Readme bookmark 1
 
-    
-## Readme folder 2
-- Readme folder description 2
 
-## Readme folder 2.1
-- Readme folder description 2.1
+## Readme folder 2
+
+Readme folder description 2
+
+
+### Readme folder 2.1
+
+Readme folder description 2.1
 
 * [Readme link 2](https://www.testlink2.com) - Readme bookmark 2
-
-    
-    
-* [Readme link 3](https://www.testlink3.com) - Readme bookmark 3
 "
 `;
 

@@ -98,7 +98,6 @@ If you want to understand more about Bookworms you can read the following:
 ## Todo
 
 - Test `convert` with browsers other than Chrome
-- Bug fix markdown generator header for deep folders
 - Improve documentation for using bookworms modules
 - Allow users to select the exports they want or won't want
 - Set up GitHub actions for repo to build, test and publish in NPM

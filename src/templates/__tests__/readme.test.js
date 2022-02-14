@@ -1,3 +1,4 @@
+import { jest } from "@jest/globals";
 import {
   bookmark,
   bookmarkFolder,
@@ -32,6 +33,7 @@ describe("Templates - Readme", () => {
       ).toMatchSnapshot();
     });
   });
+
   describe("bookmarkFolder", () => {
     test("should return description, header and children", () => {
       expect(
@@ -44,6 +46,7 @@ describe("Templates - Readme", () => {
       ).toMatchSnapshot();
     });
   });
+
   describe("convertNumberIntoHeader", () => {
     test("should return h1 mardown", () => {
       expect(convertNumberIntoHeader(0, "h1")).toEqual("# h1");
@@ -68,6 +71,7 @@ describe("Templates - Readme", () => {
       ).toMatchSnapshot();
     });
   });
+
   describe("addTitle", () => {
     test("should return title comment", () => {
       expect(addTitle("hello world")).toEqual("# hello world");
@@ -76,6 +80,7 @@ describe("Templates - Readme", () => {
       expect(addTitle("")).toEqual("");
     });
   });
+
   describe("addDescription", () => {
     test("should return description comment", () => {
       expect(addDescription("hello world")).toEqual("- hello world");
@@ -84,8 +89,12 @@ describe("Templates - Readme", () => {
       expect(addDescription("")).toEqual("");
     });
   });
+
   describe("addBookwormsDescription", () => {
     test("should return description for file comment", () => {
+      jest
+        .spyOn(Date.prototype, "toLocaleString")
+        .mockReturnValue("30/09/2021, 19:43:14");
       expect(addBookwormsDescription(1633027394454)).toEqual(
         "_These bookmarks were last updated on 30/09/2021, 19:43:14 using [Bookworms](https://github.com/thearegee/bookworms)_"
       );
