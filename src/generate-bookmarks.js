@@ -38,17 +38,24 @@ const generateImportBookmarkMarkup = (config) => {
 
 const traverseStructure = ({ bookmarks, folders }, type, index) => {
   const arr = [];
-  if (folders) {
-    arr.push(traverseFolders(folders, type, index));
-  }
-  if (bookmarks) {
-    arr.push(traverseBookmarks(bookmarks, type));
+  switch (type) {
+    case "browsers":
+      arr.push(traverseFolders(folders, type, index));
+      arr.push(traverseBookmarks(bookmarks, type));
+      break;
+    case "readme":
+      arr.push(traverseBookmarks(bookmarks, type));
+      arr.push(traverseFolders(folders, type, index));
   }
   return arr.join("");
 };
 
 const traverseFolders = (folders, type, index) => {
   const arr = [];
+  if (!folders) {
+    return arr;
+  }
+
   folders.forEach((folder) => {
     const children = traverseStructure(folder, type, index + 1);
     arr.push(
@@ -66,6 +73,10 @@ const traverseFolders = (folders, type, index) => {
 
 const traverseBookmarks = (bookmarks, type) => {
   const arr = [];
+  if (!bookmarks) {
+    return arr;
+  }
+
   bookmarks.forEach((bookmark) => {
     arr.push(generateBookmarkLinkMarkup(bookmark, type));
   });
