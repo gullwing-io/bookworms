@@ -1,3 +1,4 @@
+import { jest } from "@jest/globals";
 import {
   bookmark,
   bookmarkFolder,
@@ -71,11 +72,11 @@ describe("Templates - browsers", () => {
 
   describe("addBookwormsDescription", () => {
     test("should return description for file comment", () => {
+      jest
+        .spyOn(Date.prototype, "toLocaleString")
+        .mockReturnValue("30/09/2021, 19:43:14");
       expect(addBookwormsDescription(1633027394454)).toEqual(
-        expect.stringContaining("<!-- These bookmarks were last updated"),
-        expect.stringContaining(
-          "on using bookworms (https://github.com/thearegee/bookworms) -->"
-        )
+        "<!-- These bookmarks were last updated on 30/09/2021, 19:43:14 using bookworms (https://github.com/thearegee/bookworms) -->"
       );
     });
   });
