@@ -7,7 +7,7 @@ This is currently a BETA feature and has only been tested in Chrome. First you n
 You can now convert this into `YAML` using the following command:
 
 ```BASH
-$ npx convert ./bookmarks.html
+$ npx bookworms convert ./bookmarks.html
 ```
 
 This will then generate a `YAML` file in the `./` directory. This can then be used by Bookworms.
