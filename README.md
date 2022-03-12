@@ -12,6 +12,8 @@ This tool is designed to help teams share URLs, keep them updo date and consiste
 
 _Read more about the motivations behind this project here: [How I centralize and distribute my bookmarks](https://medium.com/@robinglen/how-i-centralize-and-distribute-my-bookmarks-cc8b11bb7475)._
 
+You can now [integrate Bookworms directly with Slack](https://github.com/thearegee/bookworms-slack-webhook).
+
 ## Getting started
 
 First thing you need to do is create your bookmarks `YAML` configuration, below is an example:

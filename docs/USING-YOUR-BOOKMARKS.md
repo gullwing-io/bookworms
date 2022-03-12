@@ -16,7 +16,11 @@ The `README.md` will then make it document and all the URLs will then be accessi
 
 Each time you make a change to the `YAML` you will need to rerun bookworms and check in the changes files. The next step is to add a GitHub action to remove this step but for now, this is manual.
 
-### Importing bookmarks
+### Integrate with Slack
+
+You can now [integrate Bookworms directly with Slack](https://github.com/thearegee/bookworms-slack-webhook).
+
+### Importing bookmarks into your browser
 
 Bookmarks have a standard HTML structure for importing and exporting, Bookworms takes advantage of this. The following browsers have been tested and work successfully:
 
