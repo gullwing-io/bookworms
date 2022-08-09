@@ -114,4 +114,4 @@ If you want to understand more about Bookworms you can read the following:
 
 ## Credits
 
-The Bookworms logo was created by [James Barry Illustrations](https://www.jamesbarryillustration.com/).
+The Bookworms logo was created by [gullwing.io](https://www.gullwing.io/).
