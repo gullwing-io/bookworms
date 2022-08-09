@@ -111,7 +111,6 @@ If you want to understand more about Bookworms you can read the following:
 - Remove step for people to need to import files in browser
 - Add the idea of public bookmarks which could generate trends
 - Investigate a chrome extension that could load remote YAML files
-- Document Murphy Slackbot that uses Bookworms
 
 ## Credits
 
