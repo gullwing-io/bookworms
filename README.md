@@ -22,31 +22,39 @@ First thing you need to do is create your bookmarks `YAML` configuration, below 
 label: Bookworms
 description: These are sample bookmarks to teach you how Bookworms works
 folders:
-  - label: folder 1
+  - 
+    label: folder 1
     description: This is to describe the folder structure
     folders:
-      - label: sub folder 1
+      - 
+        label: sub folder 1
         description: This is to describe the sub folder structure
         bookmarks:
           - label: sample url 1
             description: this is used to describe the bookmark
             href: https://www.mywebsite.com
-  - label: folder 2
+  - 
+    label: folder 2
     folders:
       - label: sub folder 2
         bookmarks:
-          - label: sample url 2
+          - 
+            label: sample url 2
             description: this is used to describe the bookmark
             href: https://www.mywebsite.com
-          - label: sample url 3
+          - 
+            label: sample url 3
             description: this is used to describe the bookmark
             href: https://www.mywebsite.com
-      - label: sub folder 3
+      - 
+        label: sub folder 3
         bookmarks:
-          - label: sample url 4
+          - 
+            label: sample url 4
             description: this is used to describe the bookmark
             href: https://www.mywebsite.com
-          - label: sample url 5
+          - 
+            label: sample url 5
             description: this is used to describe the bookmark
             href: https://www.mywebsite.com
 ```
@@ -111,6 +119,7 @@ If you want to understand more about Bookworms you can read the following:
 - Remove step for people to need to import files in browser
 - Add the idea of public bookmarks which could generate trends
 - Investigate a chrome extension that could load remote YAML files
+- Integrate with Slacks new bookmark feature
 
 ## Credits
 

@@ -1,0 +1,7 @@
+label: Interpolated bookmarks
+description: This is an example of interpolating YAML files
+folders:
+  -
+    {{ get 'https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml' '    '}}
+  -
+    {{ get 'https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks-for-merging.yaml' '    '}}

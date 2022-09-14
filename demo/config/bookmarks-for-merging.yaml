@@ -2,12 +2,15 @@
 label: Bookworms for merging
 description: These are sample bookmarks to merge with bookmarks.yaml
 folders:
-  - label: folder 3
+  - 
+    label: folder 3
     description: This is to describe the folder structure
     folders:
-      - label: sub folder 1
+      - 
+        label: sub folder 1
         description: This is to describe the sub folder structure
         bookmarks:
-          - label: sample url 1
+          - 
+            label: sample url 1
             description: this is used to describe the bookmark
             href: https://www.mywebsite.com

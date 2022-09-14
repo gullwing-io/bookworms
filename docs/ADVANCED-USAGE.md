@@ -23,6 +23,27 @@ You can also fetch bookmarks from a remote location and output the exports into 
 $ npx bookworms get https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks.yaml -d="./output"
 ```
 
+### Interpolating bookmarks
+
+`merge` works well when you have multiple local or remote `YAML` that all sit at the top level however you might have a situation where they need to be at different levels in your folder structure. For this you can use the interpolation helper within your `YAML` file.
+
+```YAML
+label: Interpolated bookmarks
+description: This is an example of interpolating YAML files
+folders:
+  -
+    {{ get './my-bookmarks.yaml' '    '}}
+  -
+    {{ get 'https://raw.githubusercontent.com/thearegee/bookworms/main/demo/config/bookmarks-for-merging.yaml' '    '}}
+```
+
+All `YAML` files are passed through [Handlebars](https://handlebarsjs.com/). There is a registered helper called `get` that takes two parameters. 
+
+- `path` - load local or remote bookmarks from path
+- `indentation` - the amount of spaces or tabs needed to indent the block. You can copy and paste this from the first `{` to the starting line.
+
+**NOTE:** I appreciate this `indentation` parameter is pretty gross at the time of writing this I couldn't think of a better way without potentially writing my own parser for the YAML file. If someone is interesting in conbributing and changing this code it would be welcome.
+
 ## Merge
 
 `merge` works in a similar way to `get` with the same options but it allows you to create bookmarks from multiple local or remote `YAML`.

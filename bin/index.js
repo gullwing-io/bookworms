@@ -77,7 +77,7 @@ const checkCommand = {
       argv.directory
     );
     if (!checkResult) {
-      console.log("Bookmarks are not up to date");
+      console.error("Bookmarks are not up to date");
       process.exit(1);
     }
     console.log("Bookmarks are up to date");
