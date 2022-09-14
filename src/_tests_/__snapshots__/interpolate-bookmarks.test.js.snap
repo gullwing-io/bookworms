@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`interpolateBookmarks should correctly return yaml with placeholders 1`] = `
+"label: Interpolated bookmarks
+description: This is an example of interpolating YAML files
+folders:
+  -
+    label: Bookworms
+    description: These are sample bookmarks to teach you how Bookworms works
+    folders:
+      - label: folder 1
+        description: This is to describe the folder structure
+        folders:
+          - label: sub folder 1
+            description: This is to describe the sub folder structure
+            bookmarks:
+              - label: sample url 1
+                description: this is used to describe the bookmark
+                href: https://www.mywebsite.com
+      - label: folder 2
+        folders:
+          - label: sub folder 2
+            bookmarks:
+              - label: sample url 2
+                description: this is used to describe the bookmark
+                href: https://www.mywebsite.com
+              - label: sample url 3
+                description: this is used to describe the bookmark
+                href: https://www.mywebsite.com
+          - label: sub folder 3
+            bookmarks:
+              - label: sample url 4
+                description: this is used to describe the bookmark
+                href: https://www.mywebsite.com
+              - label: sample url 5
+                description: this is used to describe the bookmark
+                href: https://www.mywebsite.com
+  -
+    # This config file is used to show how you can merge bookmark config
+    label: Bookworms for merging
+    description: These are sample bookmarks to merge with bookmarks.yaml
+    folders:
+      - label: folder 3
+        description: This is to describe the folder structure
+        folders:
+          - label: sub folder 1
+            description: This is to describe the sub folder structure
+            bookmarks:
+              - label: sample url 1
+                description: this is used to describe the bookmark
+                href: https://www.mywebsite.com
+    "
+`;

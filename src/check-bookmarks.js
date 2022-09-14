@@ -30,7 +30,7 @@ const checkSingleBookmark = (generatedBookmark, directory) => {
   try {
     existingBookmark = readFileSync(filename, 'utf8');
   } catch (e) {
-    console.log(`Failed to read file ${filename}`);
+    console.error(`Failed to read file ${filename}`);
     return false;
   }
   return checkBookmarkBody(existingBookmark, generatedBookmark.body);

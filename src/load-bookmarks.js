@@ -2,17 +2,29 @@ import got from 'got';
 import yaml from 'js-yaml';
 import { readFileSync } from 'fs';
 
-const fetchBookmarkConfig = async (path) => {
+const fetchBookmarkConfig = async (path, asYAML = false) => {
+    let type;
+    let body;
     if (shouldFetchFromLocal(path)) {
-        return {
-            type: 'local',
-            body: fetchLocaleBookmarkConfig(path)
+        type = 'local';
+        if (!asYAML) {
+            body = returnResponseAsObject(fetchLocaleBookmarkYAML(path));
+        } else {
+            body = fetchLocaleBookmarkYAML(path);
         }
     } else {
-        return {
-            type: 'remote',
-            body: await fetchRemoteBoomarkConfig(path)
+        type = 'remote';
+        if (!asYAML) {
+            const response = await fetchRemoteBoomarkYMAL(path)
+            body = returnResponseAsObject(response.body, response.path)
+        } else {
+            const reponse =  await fetchRemoteBoomarkYMAL(path)
+            body = reponse.body
         }
+    }
+    return {
+        type,
+        body
     }
 }
 
@@ -25,9 +37,9 @@ const shouldFetchFromLocal = (path) => {
     }
 }
 
-const fetchLocaleBookmarkConfig = (path) => {
+const fetchLocaleBookmarkYAML = (path) => {
     try {
-        return returnResponseAsObject(readFileSync(path, 'utf8'));
+        return readFileSync(path, 'utf8');
     } catch(error) {
         // todo add tests around this error handling
         console.error(`${path} returned ${error.message}`)
@@ -35,10 +47,10 @@ const fetchLocaleBookmarkConfig = (path) => {
     }
 }
 
-const fetchRemoteBoomarkConfig = async (path) =>{
+const fetchRemoteBoomarkYMAL = async (path) =>{
     try {
         const { body, statusCode } = await got(path);
-        return returnResponseAsJsonOn2xx(body, statusCode, path);
+        return returnResponseOn2xx(body, statusCode, path);
     } catch (error) {
         // todo add tests around this error handling
         console.error(`${path} returned ${error.message}`)
@@ -46,9 +58,9 @@ const fetchRemoteBoomarkConfig = async (path) =>{
     }
 }
 
-const returnResponseAsJsonOn2xx = (body, statusCode, path) => {
+const returnResponseOn2xx = (body, statusCode, path) => {
     if (statusCode >= 200 && statusCode < 300) {
-        return returnResponseAsObject(body, path)
+        return {body, path}
     } else {
         throw new Error(`${path} returned ${statusCode}`)
     }
@@ -72,4 +84,4 @@ const returnResponseAsObject = (body, path) => {
     }
 }
 
-export {fetchBookmarkConfig, shouldFetchFromLocal, fetchLocaleBookmarkConfig, fetchRemoteBoomarkConfig, returnResponseAsJsonOn2xx, returnResponseAsObject}
+export {fetchBookmarkConfig, shouldFetchFromLocal, fetchLocaleBookmarkYAML, fetchRemoteBoomarkYMAL, returnResponseOn2xx, returnResponseAsObject}

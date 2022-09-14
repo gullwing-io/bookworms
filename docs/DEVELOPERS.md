@@ -38,11 +38,11 @@ These give you access to different functions used to generate Bookmarks.
 
 A collection of helpers for loading bookmarks.
 
-- `fetchBookmarkConfig(path)` - load local or remote bookmarks from path
+- `fetchBookmarkConfig(path, asYAML)` - load local or remote bookmarks from path, asYAML is a boolean, default is false and returns JSON
 - `shouldFetchFromLocal(path)` - undersstand if a path is local or remote
-- `fetchLocaleBookmarkConfig(path)` - load bookmarks from `fs`
-- `fetchRemoteBoomarkConfig(path)` - load bookmarks from `http` request
-- `returnResponseAsJsonOn2xx(body, statusCode, path)` - handle non 2xx `http` responses
+- `fetchLocaleBookmarkYAML(path)` - load bookmarks from `fs`
+- `fetchRemoteBoomarkYAML(path)` - load bookmarks from `http` request
+- `returnResponseOn2xx(body, statusCode, path)` - handle non 2xx `http` responses
 - `returnResponseAsObject(response, path)` - return javascript object, converting YAML or JSON
 
 #### `generateBookmarks`
