@@ -46,35 +46,35 @@ exports[`generating bookmarks structure generateImportBookmarkMarkup should retu
 <H1>Bookmarks</H1>
 <!-- Bookmarks config description -->
 <DL><p>
-<DT><H3 ADD_DATE="1666964654539" LAST_MODIFIED="1666964654539">Bookmarks config</H3>
+<DT><H3 ADD_DATE="1666966934497" LAST_MODIFIED="1666966934497">Bookmarks config</H3>
 <DL><p>
     
             <!-- Folder description 1 -->
-            <DT><H3 ADD_DATE="1666964654539" LAST_MODIFIED="1666964654539">Folder 1</H3>
+            <DT><H3 ADD_DATE="1666966934497" LAST_MODIFIED="1666966934497">Folder 1</H3>
 <DL><p>
 
     <!-- Bookmark 1 -->
-    <DT><A HREF="https://www.testlink1.com" ADD_DATE="1666964654539">Link 1</A>
+    <DT><A HREF="https://www.testlink1.com" ADD_DATE="1666966934497">Link 1</A>
     
 </DL><p>
     
             <!-- Folder description 2 -->
-            <DT><H3 ADD_DATE="1666964654539" LAST_MODIFIED="1666964654539">Folder 2</H3>
+            <DT><H3 ADD_DATE="1666966934497" LAST_MODIFIED="1666966934497">Folder 2</H3>
 <DL><p>
 
             <!-- Folder description 2.1 -->
-            <DT><H3 ADD_DATE="1666964654539" LAST_MODIFIED="1666964654539">Folder 2.1</H3>
+            <DT><H3 ADD_DATE="1666966934497" LAST_MODIFIED="1666966934497">Folder 2.1</H3>
 <DL><p>
 
     <!-- Bookmark 2 -->
-    <DT><A HREF="https://www.testlink2.com" ADD_DATE="1666964654539">Link 2</A>
+    <DT><A HREF="https://www.testlink2.com" ADD_DATE="1666966934497">Link 2</A>
     
 </DL><p>
     
 </DL><p>
     
     <!-- Bookmark 3 -->
-    <DT><A HREF="https://www.testlink3.com" ADD_DATE="1666964654539">Link 3</A>
+    <DT><A HREF="https://www.testlink3.com" ADD_DATE="1666966934497">Link 3</A>
     
 </DL><p>
 </DL><p>
