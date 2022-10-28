@@ -29,21 +29,10 @@ Add into your `.package.json`:
 You can now import Bookworms into your project.
 
 ```JS
-import {loadBookmarks, generateBookmarks, saveBookmarks, mergeBookmarks} from 'bookworms';
+import {generateBookmarks, saveBookmarks, mergeBookmarks} from 'bookworms';
 ```
 
 These give you access to different functions used to generate Bookmarks.
-
-#### `loadBookmarks`
-
-A collection of helpers for loading bookmarks.
-
-- `fetchBookmarkConfig(path, asYAML)` - load local or remote bookmarks from path, asYAML is a boolean, default is false and returns JSON
-- `shouldFetchFromLocal(path)` - undersstand if a path is local or remote
-- `fetchLocaleBookmarkYAML(path)` - load bookmarks from `fs`
-- `fetchRemoteBoomarkYAML(path)` - load bookmarks from `http` request
-- `returnResponseOn2xx(body, statusCode, path)` - handle non 2xx `http` responses
-- `returnResponseAsObject(response, path)` - return javascript object, converting YAML or JSON
 
 #### `generateBookmarks`
 

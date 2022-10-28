@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`merging different bookmark configs together mergedBookmark should return merged bookmarks with default label and description 1`] = `
-Object {
+{
   "description": "Multiple bookmarks merged",
-  "folders": Array [
-    Object {
+  "folders": [
+    {
       "description": "These are sample bookmarks to teach you how Bookworms works",
-      "folders": Array [
-        Object {
+      "folders": [
+        {
           "description": "This is to describe the folder structure",
-          "folders": Array [
-            Object {
-              "bookmarks": Array [
-                Object {
+          "folders": [
+            {
+              "bookmarks": [
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 1",
@@ -24,16 +24,16 @@ Object {
           ],
           "label": "folder 1",
         },
-        Object {
-          "folders": Array [
-            Object {
-              "bookmarks": Array [
-                Object {
+        {
+          "folders": [
+            {
+              "bookmarks": [
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 2",
                 },
-                Object {
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 3",
@@ -41,14 +41,14 @@ Object {
               ],
               "label": "sub folder 2",
             },
-            Object {
-              "bookmarks": Array [
-                Object {
+            {
+              "bookmarks": [
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 4",
                 },
-                Object {
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 5",
@@ -62,15 +62,15 @@ Object {
       ],
       "label": "Bookworms",
     },
-    Object {
+    {
       "description": "These are sample bookmarks to merge with bookmarks.yaml",
-      "folders": Array [
-        Object {
+      "folders": [
+        {
           "description": "This is to describe the folder structure",
-          "folders": Array [
-            Object {
-              "bookmarks": Array [
-                Object {
+          "folders": [
+            {
+              "bookmarks": [
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 1",
@@ -91,18 +91,18 @@ Object {
 `;
 
 exports[`merging different bookmark configs together mergedBookmark should return merged bookmarks with set label and description 1`] = `
-Object {
+{
   "description": "merging different YAML files",
-  "folders": Array [
-    Object {
+  "folders": [
+    {
       "description": "These are sample bookmarks to teach you how Bookworms works",
-      "folders": Array [
-        Object {
+      "folders": [
+        {
           "description": "This is to describe the folder structure",
-          "folders": Array [
-            Object {
-              "bookmarks": Array [
-                Object {
+          "folders": [
+            {
+              "bookmarks": [
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 1",
@@ -114,16 +114,16 @@ Object {
           ],
           "label": "folder 1",
         },
-        Object {
-          "folders": Array [
-            Object {
-              "bookmarks": Array [
-                Object {
+        {
+          "folders": [
+            {
+              "bookmarks": [
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 2",
                 },
-                Object {
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 3",
@@ -131,14 +131,14 @@ Object {
               ],
               "label": "sub folder 2",
             },
-            Object {
-              "bookmarks": Array [
-                Object {
+            {
+              "bookmarks": [
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 4",
                 },
-                Object {
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 5",
@@ -152,15 +152,15 @@ Object {
       ],
       "label": "Bookworms",
     },
-    Object {
+    {
       "description": "These are sample bookmarks to merge with bookmarks.yaml",
-      "folders": Array [
-        Object {
+      "folders": [
+        {
           "description": "This is to describe the folder structure",
-          "folders": Array [
-            Object {
-              "bookmarks": Array [
-                Object {
+          "folders": [
+            {
+              "bookmarks": [
+                {
                   "description": "this is used to describe the bookmark",
                   "href": "https://www.mywebsite.com",
                   "label": "sample url 1",

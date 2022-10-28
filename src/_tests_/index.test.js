@@ -1,5 +1,4 @@
 import {
-  loadBookmarks,
   generateBookmarks,
   saveBookmarks,
   mergeBookmarks,
@@ -8,9 +7,6 @@ import {
 } from "../index";
 
 describe("Checking modules are exported", () => {
-  test("should return loadBookmarks", () => {
-    expect(loadBookmarks).toBeDefined();
-  });
   test("should return generateBookmarks", () => {
     expect(generateBookmarks).toBeDefined();
   });

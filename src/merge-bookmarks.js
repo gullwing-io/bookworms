@@ -1,4 +1,4 @@
-import { fetchBookmarkConfig } from "./load-bookmarks.js";
+import readJsYaml from "read-js-yaml";
 import { writeBookmarks } from "./save-bookmarks.js";
 import { generateImportBookmarkMarkup } from "./generate-bookmarks.js";
 
@@ -12,7 +12,7 @@ const mergedBookmark = async (
     description,
     folders: await Promise.all(
       bookmarkPaths.map(async (path) => {
-        const { type, body } = await fetchBookmarkConfig(path);
+        const { type, body } = await readJsYaml(path);
         console.log(`Fetching ${type} bookmarks from ${path}`);
         return body;
       })

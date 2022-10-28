@@ -30,16 +30,15 @@
   },
   "homepage": "https://github.com/thearegee/bookworms#readme",
   "dependencies": {
-    "got": "^11.8.2",
     "handlebars": "^4.7.7",
     "handlebars-async-helpers": "^1.0.4",
-    "js-yaml": "^4.1.0",
     "json-stringify-safe": "^5.0.1",
+    "read-js-yaml": "^1.0.1",
     "uuid": "^8.3.2",
     "xml2json-light": "^1.0.6",
     "yargs": "^17.2.1"
   },
   "devDependencies": {
-    "jest": "^26.6.3"
+    "jest": "^29.2.2"
   }
 }

@@ -1,10 +1,10 @@
-import { fetchBookmarkConfig } from "./load-bookmarks.js";
+import readJsYaml from "read-js-yaml";
 import { writeBookmarks } from "./save-bookmarks.js";
 import * as browsers from "./templates/browsers.js";
 import * as readme from "./templates/readme.js";
 
 const createBookmarks = async (path, directory) => {
-  const { type, body } = await fetchBookmarkConfig(path);
+  const { type, body } = await readJsYaml(path);
   console.log(`Fetching ${type} bookmarks from ${path}`);
   const generatedBookmarks = generateImportBookmarkMarkup(body);
   generatedBookmarks.forEach(({ filename }) => {
