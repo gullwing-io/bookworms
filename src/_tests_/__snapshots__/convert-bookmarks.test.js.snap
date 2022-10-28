@@ -9,21 +9,21 @@ folders:
       - label: sub folder 1
         bookmarks:
           - label: sample url 1
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
   - label: folder 2
     folders:
       - label: sub folder 2
         bookmarks:
           - label: sample url 2
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
           - label: sample url 3
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
       - label: sub folder 3
         bookmarks:
           - label: sample url 4
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
           - label: sample url 5
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
 "
 `;
 
@@ -36,21 +36,21 @@ folders:
       - label: sub folder 1
         bookmarks:
           - label: sample url 1
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
   - label: folder 2
     folders:
       - label: sub folder 2
         bookmarks:
           - label: sample url 2
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
           - label: sample url 3
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
       - label: sub folder 3
         bookmarks:
           - label: sample url 4
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
           - label: sample url 5
-            href: https://www.mywebsite.com
+            href: 'https://www.mywebsite.com'
 "
 `;
 

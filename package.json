@@ -33,7 +33,7 @@
     "handlebars": "^4.7.7",
     "handlebars-async-helpers": "^1.0.4",
     "json-stringify-safe": "^5.0.1",
-    "read-js-yaml": "^1.0.1",
+    "read-js-yaml": "^1.0.2",
     "uuid": "^8.3.2",
     "xml2json-light": "^1.0.6",
     "yargs": "^17.2.1"
