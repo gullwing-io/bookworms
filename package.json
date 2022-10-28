@@ -1,6 +1,6 @@
 {
   "name": "bookworms",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A cli tool for centralising and generating bookmarks",
   "main": "./src/index.js",
   "type": "module",
